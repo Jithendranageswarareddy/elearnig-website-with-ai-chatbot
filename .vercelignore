@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+*.sqlite3
+
+# Large demo-unfriendly assets that should not be bundled to Vercel
+elearning_project/media/
+elearning_project/reports/
+elearning_project/staticfiles/
+elearning_project/data/
+elearning_project/db.sqlite3
+before_user_migration.json
+stress_test_report.json
+chatbot_validation_results.json
+hallucination_fix_validation.json
+FINAL_E2E_AUDIT_REPORT.md
+FINAL_SYSTEM_VALIDATION_REPORT.md
+HALLUCINATION_FIX_v3_REPORT.md
