@@ -1,0 +1,229 @@
+{
+  "test_config": {
+    "scope": "global",
+    "regulation": "MIC20",
+    "branch": "CSE"
+  },
+  "total_questions": 100,
+  "passed": 88,
+  "failed": 12,
+  "rejected": 0,
+  "errors": 0,
+  "accuracy_percentage": 88.0,
+  "average_relevance_score": 9.89,
+  "subject_performance": {
+    "Computer Networks": {
+      "pass": 2,
+      "fail": 2,
+      "reject": 0,
+      "total": 4
+    },
+    "Artificial Intelligence": {
+      "pass": 1,
+      "fail": 1,
+      "reject": 0,
+      "total": 2
+    },
+    "Digital Logic Design": {
+      "pass": 3,
+      "fail": 1,
+      "reject": 0,
+      "total": 4
+    },
+    "Computer Organization": {
+      "pass": 4,
+      "fail": 0,
+      "reject": 0,
+      "total": 4
+    },
+    "Big Data Analytics": {
+      "pass": 2,
+      "fail": 0,
+      "reject": 0,
+      "total": 2
+    },
+    "Data Structures": {
+      "pass": 6,
+      "fail": 1,
+      "reject": 0,
+      "total": 7
+    },
+    "Cloud Computing": {
+      "pass": 7,
+      "fail": 0,
+      "reject": 0,
+      "total": 7
+    },
+    "Data Warehousing & Mining": {
+      "pass": 4,
+      "fail": 0,
+      "reject": 0,
+      "total": 4
+    },
+    "Object Oriented Programming": {
+      "pass": 4,
+      "fail": 0,
+      "reject": 0,
+      "total": 4
+    },
+    "Professional Ethics": {
+      "pass": 2,
+      "fail": 0,
+      "reject": 0,
+      "total": 2
+    },
+    "Engineering Mathematics I": {
+      "pass": 5,
+      "fail": 0,
+      "reject": 0,
+      "total": 5
+    },
+    "Discrete Mathematics": {
+      "pass": 4,
+      "fail": 1,
+      "reject": 0,
+      "total": 5
+    },
+    "Cryptography & Network Security": {
+      "pass": 6,
+      "fail": 0,
+      "reject": 0,
+      "total": 6
+    },
+    "Engineering Mathematics II": {
+      "pass": 4,
+      "fail": 1,
+      "reject": 0,
+      "total": 5
+    },
+    "Operating Systems": {
+      "pass": 1,
+      "fail": 0,
+      "reject": 0,
+      "total": 1
+    },
+    "Programming for Problem Solving": {
+      "pass": 2,
+      "fail": 0,
+      "reject": 0,
+      "total": 2
+    },
+    "Basic Electrical Engineering": {
+      "pass": 3,
+      "fail": 0,
+      "reject": 0,
+      "total": 3
+    },
+    "Software Engineering": {
+      "pass": 3,
+      "fail": 0,
+      "reject": 0,
+      "total": 3
+    },
+    "Web Technologies": {
+      "pass": 1,
+      "fail": 1,
+      "reject": 0,
+      "total": 2
+    },
+    "Distributed Systems": {
+      "pass": 1,
+      "fail": 1,
+      "reject": 0,
+      "total": 2
+    },
+    "Engineering Physics": {
+      "pass": 3,
+      "fail": 2,
+      "reject": 0,
+      "total": 5
+    },
+    "Compiler Design": {
+      "pass": 1,
+      "fail": 0,
+      "reject": 0,
+      "total": 1
+    },
+    "Mobile Computing": {
+      "pass": 6,
+      "fail": 0,
+      "reject": 0,
+      "total": 6
+    },
+    "Machine Learning": {
+      "pass": 3,
+      "fail": 1,
+      "reject": 0,
+      "total": 4
+    },
+    "Environmental Science": {
+      "pass": 3,
+      "fail": 0,
+      "reject": 0,
+      "total": 3
+    },
+    "Design and Analysis of Algorithms": {
+      "pass": 4,
+      "fail": 0,
+      "reject": 0,
+      "total": 4
+    },
+    "Internet of Things": {
+      "pass": 1,
+      "fail": 0,
+      "reject": 0,
+      "total": 1
+    },
+    "Database Management Systems": {
+      "pass": 2,
+      "fail": 0,
+      "reject": 0,
+      "total": 2
+    }
+  },
+  "type_performance": {
+    "definition": {
+      "pass": 17,
+      "fail": 3,
+      "reject": 0,
+      "total": 20
+    },
+    "conceptual": {
+      "pass": 8,
+      "fail": 2,
+      "reject": 0,
+      "total": 10
+    },
+    "application": {
+      "pass": 6,
+      "fail": 4,
+      "reject": 0,
+      "total": 10
+    },
+    "explanation": {
+      "pass": 19,
+      "fail": 1,
+      "reject": 0,
+      "total": 20
+    },
+    "advantages": {
+      "pass": 8,
+      "fail": 2,
+      "reject": 0,
+      "total": 10
+    },
+    "process": {
+      "pass": 15,
+      "fail": 0,
+      "reject": 0,
+      "total": 15
+    },
+    "comparison": {
+      "pass": 15,
+      "fail": 0,
+      "reject": 0,
+      "total": 15
+    }
+  },
+  "timestamp": "1774114676.5684779"
+}

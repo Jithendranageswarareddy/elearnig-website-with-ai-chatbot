@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}Subjects{% endblock %}
+{% block content %}
+<section class="page-shell section-stack">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">Browse Subjects</h1>
+      <p class="section-subtitle">Explore subjects grouped semester-wise with quick lesson access.</p>
+    </div>
+  </header>
+
+  <div class="card card-glass">
+    <div class="card-body py-3">
+      <form method="get" class="row g-2 align-items-end">
+        <div class="col-md-6 col-lg-4">
+          <label class="form-label mb-1">Filter Semester</label>
+          <select name="semester" class="form-select">
+            <option value="">All Semesters</option>
+            {% for sem in semesters %}
+              <option value="{{ sem.id }}" {% if sem.id|stringformat:'s' == selected_semester %}selected{% endif %}>Semester {{ sem.number }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <button type="submit" class="btn btn-primary w-100">Apply</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="page-content d-grid gap-4">
+    {% for group in semester_groups %}
+      <section class="semester-group-block">
+        <h2 class="h5 mb-3">🎓 Semester {{ group.semester.number }}</h2>
+        <div class="row g-3 subject-grid stagger-grid" data-stagger>
+          {% for subject in group.subjects %}
+            <div class="col-md-6 col-lg-4 stagger-item">
+              <article class="card card-glass h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">{{ subject.name }}</h3>
+                  <p class="subject-meta">{{ subject.description|default:'No description available.'|truncatechars:120 }}</p>
+                  <a href="{% url 'learn_lessons' subject.id %}" class="btn btn-primary btn-sm subject-command-source" data-subject-name="{{ subject.name }}">View Lessons</a>
+                </div>
+              </article>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% empty %}
+      <div class="card card-glass">
+        <div class="card-body text-center">
+          <p class="mb-0 text-muted-ui">No subjects found for the selected filter.</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if subjects.paginator.num_pages > 1 %}
+    <nav aria-label="Subject pages" class="d-flex justify-content-center mt-3">
+      <ul class="pagination mb-0">
+        {% if subjects.has_previous %}
+          <li class="page-item"><a class="page-link" href="?semester={{ selected_semester }}&page={{ subjects.previous_page_number }}">Previous</a></li>
+        {% endif %}
+        <li class="page-item disabled"><span class="page-link">Page {{ subjects.number }} of {{ subjects.paginator.num_pages }}</span></li>
+        {% if subjects.has_next %}
+          <li class="page-item"><a class="page-link" href="?semester={{ selected_semester }}&page={{ subjects.next_page_number }}">Next</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  {% endif %}
+</section>
+{% endblock %}

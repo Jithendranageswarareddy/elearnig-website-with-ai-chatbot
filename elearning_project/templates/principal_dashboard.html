@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Principal Dashboard{% endblock %}
+{% block content %}
+<section class="page-shell dashboard-shell">
+	<header class="page-header hero-panel fade-in">
+		<div>
+			<h1 class="mb-1">Principal Dashboard</h1>
+			<p class="section-subtitle">Track platform activity, curriculum coverage, and chatbot readiness.</p>
+		</div>
+		<div class="kpi-grid mt-3" data-stagger>
+			<article class="kpi-card stagger-item">
+				<p class="kpi-label">Total Lessons</p>
+				<p class="kpi-value" data-counter-target="{{ total_lessons|default:0 }}">0</p>
+			</article>
+			<article class="kpi-card stagger-item">
+				<p class="kpi-label">Total Students</p>
+				<p class="kpi-value" data-counter-target="{{ total_students|default:0 }}">0</p>
+			</article>
+			<article class="kpi-card stagger-item">
+				<p class="kpi-label">Approved PDFs</p>
+				<p class="kpi-value" data-counter-target="{{ approved_pdfs|default:0 }}">0</p>
+			</article>
+			<article class="kpi-card stagger-item">
+				<p class="kpi-label">Queries This Week</p>
+				<p class="kpi-value" data-counter-target="{{ daily_usage_last_week|default:0 }}">0</p>
+			</article>
+		</div>
+	</header>
+
+	<section class="page-content row g-3 mt-1">
+		<div class="col-12">
+			<div class="card card-glass h-100">
+				<div class="card-body">
+					<h2 class="h5 mb-3">Top Subject Query Demand</h2>
+					<ul class="list-group list-group-flush">
+						{% for item in top_subject_queries %}
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								<span>{{ item.subject__name }}</span>
+								<span class="badge bg-secondary">{{ item.query_count }}</span>
+							</li>
+						{% empty %}
+							<li class="list-group-item text-muted-ui">No query analytics available yet.</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+{% endblock %}

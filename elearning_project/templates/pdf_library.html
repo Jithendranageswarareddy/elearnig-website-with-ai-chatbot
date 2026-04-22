@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block title %}PDF Library{% endblock %}
+{% block content %}
+<section class="page-shell section-stack">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">{% if mine_only %}My Uploaded PDFs{% else %}Reference PDF Library{% endif %}</h1>
+      <p class="section-subtitle">Browse references with status and chunk availability.</p>
+    </div>
+    {% if user.is_faculty_or_principal %}
+      <div class="page-actions">
+        <a href="{% url 'upload_pdf' %}" class="btn btn-primary btn-sm">Upload PDF</a>
+        <a href="{% url 'pdf_list' %}?mine=1" class="btn btn-secondary btn-sm">My PDFs</a>
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body">
+      <form method="get" class="row g-3 align-items-end">
+        <div class="col-md-3">
+          <label class="form-label">Semester</label>
+          <select name="semester" class="form-select">
+            <option value="">All Semesters</option>
+            {% for sem in semesters %}
+              <option value="{{ sem.id }}" {% if sem.id|stringformat:'s' == request.GET.semester %}selected{% endif %}>Semester {{ sem.number }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Subject</label>
+          <select name="subject" class="form-select">
+            <option value="">All Subjects</option>
+            {% for subj in subjects %}
+              <option value="{{ subj.id }}" {% if subj.id|stringformat:'s' == request.GET.subject %}selected{% endif %}>{{ subj.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Title Search</label>
+          <input type="text" name="q" class="form-control" placeholder="Search title..." value="{{ request.GET.q }}">
+        </div>
+        <input type="hidden" name="mine" value="{% if mine_only %}1{% endif %}">
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary w-100 js-btn-loading" data-loading-text="Filtering...">Filter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="page-content pdf-grid stagger-grid" data-stagger>
+    {% for pdf in pdfs %}
+      <article class="card card-glass pdf-card stagger-item">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <h3 class="card-title h5 mb-0">{{ pdf.title }}</h3>
+            <span class="badge {% if pdf.status == 'approved' %}bg-success{% elif pdf.status == 'hold' %}bg-warning text-dark{% elif pdf.status == 'rejected' %}bg-danger{% else %}bg-secondary{% endif %}">
+              {{ pdf.get_status_display }}
+            </span>
+          </div>
+
+          <p class="pdf-meta mb-3">Chunks: {{ pdf.chunk_count }}</p>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="{% url 'serve_reference_pdf' pdf.id %}?t={% now 'U' %}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Open PDF</a>
+            <a href="{% url 'preview_pdf_chunks' pdf.id %}" class="btn btn-outline-secondary btn-sm">Viewer</a>
+            {% if user.is_principal or user.id == pdf.uploaded_by_id %}
+              <a href="{% url 'edit_pdf' pdf.id %}" class="btn btn-secondary btn-sm">Edit</a>
+              <form method="post" action="{% url 'delete_pdf' pdf.id %}" class="d-inline">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>
+              </form>
+            {% endif %}
+
+            {% if user.is_principal %}
+              {% if pdf.status != 'approved' %}
+                <form method="post" action="{% url 'approve_pdf' pdf.id %}" class="d-inline">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                </form>
+              {% endif %}
+
+              {% if pdf.status != 'hold' %}
+                <form method="post" action="{% url 'hold_pdf' pdf.id %}" class="d-inline">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-warning btn-sm">Hold</button>
+                </form>
+              {% endif %}
+
+              {% if pdf.status != 'rejected' %}
+                <form method="post" action="{% url 'reject_pdf' pdf.id %}" class="d-inline">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                </form>
+              {% endif %}
+
+            {% endif %}
+          </div>
+        </div>
+      </article>
+    {% empty %}
+      <div class="card card-glass">
+        <div class="card-body empty-state">
+          <span class="empty-state-icon"><i class="bi bi-file-earmark-pdf"></i></span>
+          <div>
+            <h3 class="h5 mb-1">No PDFs match this filter</h3>
+            <p>Try another semester or subject filter. {% if user.is_faculty_or_principal %}You can also upload new references for students.{% endif %}</p>
+          </div>
+          {% if user.is_faculty_or_principal %}
+            <a href="{% url 'upload_pdf' %}" class="btn btn-primary btn-sm">Upload First PDF</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if pdfs.paginator.num_pages > 1 %}
+    <nav aria-label="PDF pages" class="d-flex justify-content-center mt-3">
+      <ul class="pagination mb-0">
+        {% if pdfs.has_previous %}
+          <li class="page-item"><a class="page-link" href="?semester={{ request.GET.semester }}&subject={{ request.GET.subject }}&q={{ request.GET.q }}&mine={% if mine_only %}1{% endif %}&page={{ pdfs.previous_page_number }}">Previous</a></li>
+        {% endif %}
+        <li class="page-item disabled"><span class="page-link">Page {{ pdfs.number }} of {{ pdfs.paginator.num_pages }}</span></li>
+        {% if pdfs.has_next %}
+          <li class="page-item"><a class="page-link" href="?semester={{ request.GET.semester }}&subject={{ request.GET.subject }}&q={{ request.GET.q }}&mine={% if mine_only %}1{% endif %}&page={{ pdfs.next_page_number }}">Next</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  {% endif %}
+</section>
+{% endblock %}

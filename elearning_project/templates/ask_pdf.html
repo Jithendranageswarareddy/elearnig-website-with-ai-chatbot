@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %}Ask from PDF{% endblock %}
+{% block content %}
+<section class="chat-page" data-chat-root>
+  <div class="card card-glass" data-reveal data-skeleton-host data-skeleton-delay="360">
+    <div class="skeleton-layer card-skeleton">
+      <div class="skeleton-block skeleton-line-lg"></div>
+      <div class="skeleton-block skeleton-line"></div>
+      <div class="skeleton-block skeleton-line"></div>
+    </div>
+    <div class="card-body" data-skeleton-content>
+      <form method="post" class="row g-3 align-items-end" data-chat-form>
+        {% csrf_token %}
+        <div class="col-12 col-lg">
+          <label class="form-label">Question</label>
+          <input type="text" name="question" class="form-control" placeholder="Ask a question from uploaded PDF content..." required>
+        </div>
+        <div class="col-12 col-lg-auto">
+          <button type="submit" class="btn btn-primary w-100 js-btn-loading" data-loading-text="Searching...">Ask PDF</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="card card-glass chat-panel" data-reveal>
+    <div class="chat-panel-header">
+      <h2 class="h5 mb-0">PDF Q&A</h2>
+      <span class="chat-status">Document Context Mode</span>
+    </div>
+
+    <div class="chat-panel-shell" data-skeleton-host data-skeleton-delay="560">
+      <div class="skeleton-layer chat-skeleton">
+        <div class="d-flex align-items-center gap-2">
+          <div class="skeleton-block skeleton-circle"></div>
+          <div class="skeleton-block skeleton-line skeleton-w-38"></div>
+        </div>
+        <div class="skeleton-block skeleton-h-54"></div>
+        <div class="skeleton-block skeleton-h-72 skeleton-w-86 skeleton-align-end"></div>
+        <div class="skeleton-block skeleton-line"></div>
+      </div>
+
+      <span class="chat-scroll-shadow chat-scroll-shadow-top" aria-hidden="true"></span>
+      <span class="chat-scroll-shadow chat-scroll-shadow-bottom" aria-hidden="true"></span>
+
+      <div class="messages" data-chat-messages data-skeleton-content aria-live="polite">
+        {% if request.POST.question %}
+          <div class="message-group message-group-user">
+            <div class="message-row user">
+              <div class="message-stack">
+                <article class="message message-user">
+                  <div class="message-bubble">{{ request.POST.question }}</div>
+                  <span class="message-time">{% now "h:i A" %}</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if answer %}
+          <div class="message-group message-group-ai">
+            <div class="message-row ai">
+              <span class="message-avatar">AI</span>
+              <div class="message-stack">
+                <article class="message message-ai">
+                  <div class="message-bubble">{{ answer }}</div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="message-time">{% now "h:i A" %}</span>
+                    <button type="button" class="btn btn-icon btn-outline-secondary btn-sm message-copy-btn" data-copy-message aria-label="Copy AI response">
+                      <i class="bi bi-clipboard"></i>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        <div class="typing-indicator" data-typing-indicator>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+        </div>
+
+        {% if not request.POST.question and not answer %}
+          <div class="chat-empty empty-state">
+            <span class="empty-state-icon"><i class="bi bi-file-earmark-pdf"></i></span>
+            <div>
+              <h3 class="h5 mb-1">Ready for document Q&A</h3>
+              <p>Ask targeted questions from approved PDFs to get concise, context-grounded answers.</p>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-icon btn-secondary chat-scroll-bottom" data-chat-scroll aria-label="Scroll to latest message">
+      <i class="bi bi-arrow-down"></i>
+    </button>
+  </div>
+</section>
+{% endblock %}

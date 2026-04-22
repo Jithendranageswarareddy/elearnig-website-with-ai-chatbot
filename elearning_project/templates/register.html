@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="hero hero-auth fade-in">
+  <div class="hero-overlay d-flex justify-content-center">
+    <div class="card card-glass auth-card auth-card-md">
+      <div class="card-body">
+        <h2 class="text-center mb-3">Create Account</h2>
+        <p class="text-center section-subtitle mb-4">Join the platform and start learning with AI support.</p>
+        <form method="post" class="row g-3">
+          {% csrf_token %}
+          <div class="col-12">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Role</label>
+            <select name="role" class="form-select" required>
+              <option value="">Select Role</option>
+              <option value="STUDENT">Student</option>
+              <option value="FACULTY">Faculty</option>
+              <option value="PRINCIPAL">Principal</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Confirm Password</label>
+            <input type="password" name="password2" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100 js-btn-loading" data-loading-text="Creating account...">Create Account</button>
+          </div>
+        </form>
+        <p class="text-center mt-3 mb-0 text-muted-ui">Already have an account? <a href="{% url 'user_login' %}">Sign In</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

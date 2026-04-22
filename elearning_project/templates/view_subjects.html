@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}Subjects{% endblock %}
+{% block content %}
+<section class="page-shell section-stack">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">All Subjects</h1>
+      <p class="section-subtitle">Manage active curriculum subjects and semester mapping.</p>
+    </div>
+    <div class="page-actions">
+      <a href="{% url 'add_subject' %}" class="btn btn-primary btn-sm">Add Subject</a>
+    </div>
+  </header>
+
+  <div class="page-content d-grid gap-4">
+    {% for group in semester_groups %}
+      <section class="semester-group-block">
+        <h2 class="h5 mb-3">🎓 Semester {{ group.semester.number }} ({{ group.semester.regulation }})</h2>
+        <div class="row g-3">
+          {% for subj in group.subjects %}
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-glass h-100">
+                <div class="card-body d-grid gap-2">
+                  <div class="d-flex align-items-start justify-content-between gap-2">
+                    <h3 class="h6 mb-0">{{ subj.name }}</h3>
+                    <span class="code-pill">{{ subj.subject_code }}</span>
+                  </div>
+                  <div class="text-muted-ui small">Sem {{ subj.semester.number }} • {{ subj.semester.regulation }}</div>
+                  <div>
+                    {% if subj.is_active %}
+                      <span class="badge bg-success">Active</span>
+                    {% else %}
+                      <span class="badge bg-secondary">Inactive</span>
+                    {% endif %}
+                  </div>
+                  <form method="post" action="{% url 'delete_subject' subj.id %}" class="d-inline mt-1">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this subject?')">Delete</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% empty %}
+      <div class="card card-glass">
+        <div class="card-body text-center text-muted-ui py-4">No subjects available.</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

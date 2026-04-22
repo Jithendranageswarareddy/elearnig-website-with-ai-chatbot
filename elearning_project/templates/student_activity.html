@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Student Activity{% endblock %}
+{% block content %}
+<section class="page-shell section-stack fade-in">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">Student Activity</h1>
+      <p class="section-subtitle">Cross-check student lesson usage, bookmarks, and chatbot activity.</p>
+    </div>
+    <div class="page-actions">
+      <a href="{% url 'dashboard' %}" class="btn btn-secondary btn-sm">Back to Dashboard</a>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Student</th>
+              <th>Viewed Lessons</th>
+              <th>Completed</th>
+              <th>Bookmarks</th>
+              <th>Chat Queries</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for student in student_activity %}
+              <tr>
+                <td>{{ student.name|default:student.email }}</td>
+                <td>{{ student.viewed_lessons }}</td>
+                <td>{{ student.completed_lessons }}</td>
+                <td>{{ student.bookmarks_count }}</td>
+                <td>{{ student.chat_queries_count }}</td>
+              </tr>
+            {% empty %}
+              <tr>
+                <td colspan="5" class="text-center text-muted-ui py-4">No student activity available.</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

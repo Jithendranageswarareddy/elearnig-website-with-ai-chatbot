@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Contact Admin{% endblock %}
+{% block content %}
+<div class="hero hero-auth fade-in">
+  <div class="hero-overlay d-flex justify-content-center">
+    <div class="card card-glass auth-card">
+      <div class="card-body">
+        <h2 class="text-center mb-3">Get In Touch</h2>
+        <p class="text-center section-subtitle mb-4">Send a message to the admin team.</p>
+        {% if success %}
+          <div class="alert alert-success" role="alert">Message sent successfully.</div>
+        {% endif %}
+        <form method="post" class="row g-3">
+          {% csrf_token %}
+          <div class="col-12">
+            <label class="form-label">Full Name</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Message</label>
+            <textarea name="message" rows="5" class="form-control" required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100 js-btn-loading" data-loading-text="Sending...">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

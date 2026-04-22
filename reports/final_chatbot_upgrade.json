@@ -1,0 +1,155 @@
+{
+  "objective": "Hybrid AI Academic Assistant (DB-first + AI fallback)",
+  "execution_date": "2026-03-21",
+  "constraints_respected": {
+    "no_db_schema_change": true,
+    "core_chatbot_logic_preserved": true,
+    "system_stability_preserved": true
+  },
+  "critical_upgrades": [
+    {
+      "id": 1,
+      "name": "Hybrid AI OpenRouter Integration",
+      "status": "implemented",
+      "details": "Added AI fallback service with OpenRouter call path for low confidence and optional enhancement for medium confidence.",
+      "files": [
+        "elearning_project/chatbot/services/ai_fallback_service.py",
+        "elearning_project/chatbot/services/answer_service.py",
+        "elearning_project/elearning_project/settings.py"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Confidence Scoring System",
+      "status": "implemented",
+      "details": "Introduced relevance_score + confidence_label (High/Medium/Low) with hybrid routing policy.",
+      "files": [
+        "elearning_project/chatbot/services/answer_service.py"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Multi-Chunk Retrieval",
+      "status": "implemented",
+      "details": "Retrieval upgraded to rank and return top 3-5 viable chunks with de-duplication metadata and soft fallback.",
+      "files": [
+        "elearning_project/chatbot/services/search_service.py"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Strict Answer Formatter",
+      "status": "implemented",
+      "details": "Added strict academic output format: Definition, Explanation, Key Points, Example, Conclusion.",
+      "files": [
+        "elearning_project/chatbot/services/answer_formatter.py",
+        "elearning_project/chatbot/services/answer_service.py"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Reduce Over-Rejection",
+      "status": "implemented",
+      "details": "Lowered strict thresholds and switched to soft fallback behavior for partial relevance instead of hard rejection.",
+      "files": [
+        "elearning_project/chatbot/services/search_service.py",
+        "elearning_project/chatbot/services/answer_service.py"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Answer From Transparency UI",
+      "status": "implemented",
+      "details": "Answer source now includes Subject → Unit → PDF and appears in chat details/inline source sections.",
+      "files": [
+        "elearning_project/chatbot/services/answer_service.py",
+        "elearning_project/static/js/chatgpt-chat.js"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Follow-Up Question Suggestions",
+      "status": "implemented",
+      "details": "Generated 2-3 contextual follow-up suggestions and rendered clickable chips in assistant message bubbles.",
+      "files": [
+        "elearning_project/chatbot/services/answer_service.py",
+        "elearning_project/static/js/chatgpt-chat.js"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Chat History + Smart Reuse",
+      "status": "implemented",
+      "details": "Extended history window to last 5 queries and applied follow-up context expansion for short dependent prompts.",
+      "files": [
+        "elearning_project/chatbot/views.py"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Performance Optimization",
+      "status": "implemented",
+      "details": "Added chat response caching using Django cache + optimized retrieval path and capped chunk usage.",
+      "files": [
+        "elearning_project/chatbot/views.py",
+        "elearning_project/chatbot/services/answer_service.py",
+        "elearning_project/chatbot/services/search_service.py"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "UI/UX Chat Redesign",
+      "status": "implemented",
+      "details": "Increased readability (font/spacing), improved bubble styles, sticky composer input, and follow-up chip layout.",
+      "files": [
+        "elearning_project/static/css/chatgpt-chat.css",
+        "elearning_project/static/js/chatgpt-chat.js",
+        "elearning_project/templates/chat.html"
+      ]
+    }
+  ],
+  "performance_before_after": {
+    "baseline": {
+      "source": "reports/test_100_summary.json (pre-upgrade snapshot)",
+      "total_questions": 100,
+      "passed": 58,
+      "failed": 0,
+      "rejected": 42,
+      "accuracy_percentage": 58.0,
+      "average_relevance_score": 10.0
+    },
+    "after_upgrade": {
+      "source": "reports/test_100_summary.json (post-upgrade run)",
+      "total_questions": 100,
+      "passed": 88,
+      "failed": 12,
+      "rejected": 0,
+      "accuracy_percentage": 88.0,
+      "average_relevance_score": 9.94
+    },
+    "delta": {
+      "accuracy_change_points": 30.0,
+      "rejection_change_points": -42.0,
+      "pass_count_change": 30,
+      "status": "improved"
+    }
+  },
+  "quality_outcome": {
+    "response_clarity": "improved",
+    "response_structure": "strict_academic_format",
+    "source_transparency": "improved",
+    "chat_continuity": "improved",
+    "speed_profile": "improved_with_cache"
+  },
+  "runtime_validation": {
+    "django_check": "passed",
+    "system_health_check": "passed",
+    "chat_api_health": "passed"
+  },
+  "notes": [
+    "OpenRouter fallback is active when OPENROUTER_API_KEY is configured.",
+    "Without API key, system remains DB-first and uses safe contextual fallback.",
+    "No database migrations were introduced."
+  ],
+  "final_status": "DEMO_READY_AND_UPGRADED"
+}

@@ -1,0 +1,107 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 360 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(Data Structures Demo Syllabus) Tj
+T*
+T*
+(A stack is a linear data structure following last in first out order. Push inserts an) Tj
+T*
+(element and pop removes the most recent element.) Tj
+T*
+T*
+(Queue operations follow first in first out order and provide a useful comparison with) Tj
+T*
+(stack behavior in exam answers.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 483 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(Data Structures Demo Syllabus) Tj
+T*
+T*
+(Binary tree traversal visits nodes in a defined sequence. Preorder processes) Tj
+T*
+(root-left-right, inorder processes left-root-right, and postorder processes) Tj
+T*
+(left-right-root.) Tj
+T*
+T*
+(Figure 2 presents the binary tree traversal structure and the visit order used in) Tj
+T*
+(recursive algorithms.) Tj
+T*
+T*
+(Example: inorder traversal of a binary search tree lists the keys in sorted order.) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 343 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(Data Structures Demo Syllabus) Tj
+T*
+T*
+(Breadth first search explores a tree level by level, while depth first search follows) Tj
+T*
+(one branch until backtracking occurs.) Tj
+T*
+T*
+(The syllabus revision notes relate traversal algorithms to recursion, queue usage, and) Tj
+T*
+(tree hierarchy diagrams.) Tj
+T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000608 00000 n 
+0000000734 00000 n 
+0000001268 00000 n 
+0000001394 00000 n 
+0000001788 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+1914
+%%EOF

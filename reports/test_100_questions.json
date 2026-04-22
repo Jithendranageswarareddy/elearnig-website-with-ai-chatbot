@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "question": "Define ### UNIT 3: Network Layer\n\n#### Introduction\n\nHandles routing and addressing.\n\n#### Detailed Explana.",
+    "subject": "Computer Networks",
+    "subject_id": 27,
+    "unit": "Unit 3: Network Layer",
+    "unit_id": 224,
+    "type": "definition",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "Why do we need ### UNIT 4: Machine Learning Basics\n\n#### Introduction\n\nMachine learning is a subset of AI that enab?",
+    "subject": "Artificial Intelligence",
+    "subject_id": 30,
+    "unit": "Unit 5: Expert Systems",
+    "unit_id": 231,
+    "type": "conceptual",
+    "difficulty": "hard"
+  },
+  {
+    "id": 3,
+    "question": "Describe a practical application of ### UNIT 4: Memory Devices\n\n#### Introduction\n\nMemory devices are used to store data and instruction.",
+    "subject": "Digital Logic Design",
+    "subject_id": 14,
+    "unit": "Unit 3: Sequential Circuits",
+    "unit_id": 179,
+    "type": "application",
+    "difficulty": "hard"
+  },
+  {
+    "id": 4,
+    "question": "Explain the concept of Unit 2: Arithmetic and Logic Unit.",
+    "subject": "Computer Organization",
+    "subject_id": 20,
+    "unit": "Unit 5: Control Unit",
+    "unit_id": 201,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "question": "Discuss Unit 1: Introduction to AI.",
+    "subject": "Artificial Intelligence",
+    "subject_id": 30,
+    "unit": "Unit 2: Search Techniques",
+    "unit_id": 228,
+    "type": "explanation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "question": "How does This unit focuses on Spark architecture and features work?",
+    "subject": "Big Data Analytics",
+    "subject_id": 42,
+    "unit": "Unit 2: Hadoop Ecosystem",
+    "unit_id": 268,
+    "type": "explanation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "question": "Why is A stack follows Last In First Out (LIFO), while a queue follows First In First Out (FIFO) important?",
+    "subject": "Data Structures",
+    "subject_id": 12,
+    "unit": "Unit 1: Core Concepts",
+    "unit_id": 167,
+    "type": "advantages",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "Give a definition of #### Detailed Explanation\n\n**Types of Virtualization**\nIncludes server, storage, and network virtualization.",
+    "subject": "Cloud Computing",
+    "subject_id": 43,
+    "unit": "Unit 5: Cloud Security",
+    "unit_id": 276,
+    "type": "definition",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "question": "What is the role of ### UNIT 5: Cloud Security\n\n#### Introduction\n\nCloud security ensures data protection?",
+    "subject": "Cloud Computing",
+    "subject_id": 43,
+    "unit": "Unit 3: Cloud Services Models",
+    "unit_id": 274,
+    "type": "conceptual",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "question": "What are the stages of Unit 2: Data Preprocessing?",
+    "subject": "Data Warehousing & Mining",
+    "subject_id": 32,
+    "unit": "Unit 5: Clustering and Classification",
+    "unit_id": 241,
+    "type": "process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "question": "Explain why ### UNIT 2: Data Preprocessing\n\n#### Introduction\n\nPrepares data for mining.\n\n#### Detailed Explanat is important.",
+    "subject": "Data Warehousing & Mining",
+    "subject_id": 32,
+    "unit": "Unit 3: Data Mining Techniques",
+    "unit_id": 239,
+    "type": "conceptual",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "question": "Explain It focuses on how different components interact to execute programs.",
+    "subject": "Computer Organization",
+    "subject_id": 20,
+    "unit": "Unit 2: Arithmetic and Logic Unit",
+    "unit_id": 198,
+    "type": "explanation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "question": "What is the significance of ### UNIT 4: Polymorphism\n\n#### Introduction\n\nPolymorphism allows objects to take multiple forms?",
+    "subject": "Object Oriented Programming",
+    "subject_id": 18,
+    "unit": "Unit 1: OOP Concepts",
+    "unit_id": 187,
+    "type": "explanation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "question": "Elaborate on #### Detailed Explanation\n\n**Threats and Solutions**\nIncludes encryption and access control.",
+    "subject": "Cloud Computing",
+    "subject_id": 43,
+    "unit": "Unit 1: Cloud Fundamentals",
+    "unit_id": 272,
+    "type": "explanation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "question": "What is the difference between Professional Ethics 20CS8T02 Unit 5: Applications and Case Studies 20CS8T02 – Professional Ethics. Engineers must respect intellectual property and av and Unit 5: Applications and Case Studies?",
+    "subject": "Professional Ethics",
+    "subject_id": 47,
+    "unit": "Unit 4: Advanced Topics",
+    "unit_id": 285,
+    "type": "comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "question": "What are the stages of This unit explains core concepts of Engineering Mathematics I with process-level reasoning, control flow, and concept mapping for search-friendly understanding?",
+    "subject": "Engineering Mathematics I",
+    "subject_id": 7,
+    "unit": "Unit 1: Foundations",
+    "unit_id": 152,
+    "type": "process",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "question": "What do you understand by ### UNIT 3: Combinatorics\n\n#### Introduction\n\nCombinatorics deals with counting, arrangement, and selection of objects?",
+    "subject": "Discrete Mathematics",
+    "subject_id": 19,
+    "unit": "Unit 2: Set Theory and Relations",
+    "unit_id": 193,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "question": "What do you understand by ### UNIT 2: Symmetric Key Cryptography\n\n#### Introduction\n\nUses a single key.\n\n#### Detailed Explana?",
+    "subject": "Cryptography & Network Security",
+    "subject_id": 38,
+    "unit": "Unit 2: Symmetric Key Cryptography",
+    "unit_id": 258,
+    "type": "definition",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "question": "Define It is widely used in physics and engineering to analyze quantities that have both magnitude and direction, such as velocity, force, and electric fields.",
+    "subject": "Engineering Mathematics II",
+    "subject_id": 13,
+    "unit": "Unit 4: Fourier Series",
+    "unit_id": 175,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "question": "How is ### UNIT 3: Memory Management\n\n#### Introduction\n\nMemory management involves managing primary memory to ensure efficient allocation and usage different from This unit introduces the fundamental concepts of operating systems, their functions, and types?",
+    "subject": "Operating Systems",
+    "subject_id": 24,
+    "unit": "Unit 5: Deadlocks and Security",
+    "unit_id": 211,
+    "type": "comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "question": "Explain the steps involved in Programming for Problem Solving 20CS1T01 Parser Integration Test 20CS1T01. Functions and arrays are fundamental concepts in C programming that promote.",
+    "subject": "Programming for Problem Solving",
+    "subject_id": 6,
+    "unit": "Unit 2: C Programming Basics",
+    "unit_id": 148,
+    "type": "process",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "question": "What is ### UNIT 5: Electrical Measurements\n\n#### Introduction\n\nElectrical measurements involve measuring electrical quantities such as voltage, current, resistance, and power?",
+    "subject": "Basic Electrical Engineering",
+    "subject_id": 8,
+    "unit": "Unit 5: Electrical Measurements",
+    "unit_id": 161,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "question": "What are the stages of #### Applications\n\nUsed in quality assurance?",
+    "subject": "Software Engineering",
+    "subject_id": 26,
+    "unit": "Unit 1: Software Development Life Cycle",
+    "unit_id": 217,
+    "type": "process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 24,
+    "question": "List the steps for This unit presents applications, case studies, and analytical methods in Data Structures to strengthen concept-based learning and revision.",
+    "subject": "Data Structures",
+    "subject_id": 12,
+    "unit": "Unit 2: Stack Queue Searching and Recursion",
+    "unit_id": 168,
+    "type": "process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "question": "Explain ### UNIT 2: HTML and CSS\n\n#### Introduction\n\nHTML structures content, CSS styles it.",
+    "subject": "Web Technologies",
+    "subject_id": 33,
+    "unit": "Unit 5: Web Security",
+    "unit_id": 246,
+    "type": "explanation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "question": "What is the difference between #### Detailed Explanation\n\n**Message Passing**\nProcesses communicate by sending messages and ### UNIT 1: Introduction to Distributed Systems\n\n#### Introduction\n\nA distributed system is a collec?",
+    "subject": "Distributed Systems",
+    "subject_id": 37,
+    "unit": "Unit 2: Communication Models",
+    "unit_id": 253,
+    "type": "comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "question": "Explain ### UNIT 2: Data Link Layer\n\n#### Introduction\n\nEnsures reliable data transfer.\n\n#### Detailed Expla.",
+    "subject": "Computer Networks",
+    "subject_id": 27,
+    "unit": "Unit 5: Application Layer",
+    "unit_id": 226,
+    "type": "explanation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 28,
+    "question": "How is Engineering Physics 20CS1T04 Unit 3: Design and Implementation 20CS1T04 – Engineering Physics. Introduction Oscillations and waves describe repetitive performed/executed?",
+    "subject": "Engineering Physics",
+    "subject_id": 9,
+    "unit": "Unit 3: Design and Implementation",
+    "unit_id": 164,
+    "type": "process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "question": "What are the stages of This unit focuses on the definition, properties, and applications of Laplace transforms?",
+    "subject": "Engineering Mathematics II",
+    "subject_id": 13,
+    "unit": "Unit 4: Fourier Series",
+    "unit_id": 175,
+    "type": "process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "question": "Compare This unit introduces compiler structure and phases and #### Detailed Explanation\n\n**Parsing Techniques**\nTop-down and bottom-up parsing.",
+    "subject": "Compiler Design",
+    "subject_id": 31,
+    "unit": "Unit 4: Semantic Analysis",
+    "unit_id": 235,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 31,
+    "question": "Differentiate between Unit 2: Wireless Networks and #### Applications\n\nUsed in networking.",
+    "subject": "Mobile Computing",
+    "subject_id": 39,
+    "unit": "Unit 2: Wireless Networks",
+    "unit_id": 263,
+    "type": "comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "question": "Give a definition of ### UNIT 3: Memory Organization\n\n#### Introduction\n\nMemory organization refers to the structure and .",
+    "subject": "Computer Organization",
+    "subject_id": 20,
+    "unit": "Unit 5: Control Unit",
+    "unit_id": 201,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "question": "Why is ### UNIT 2: Wireless Networks\n\n#### Introduction\n\nEnable wireless communication important?",
+    "subject": "Mobile Computing",
+    "subject_id": 39,
+    "unit": "Unit 4: Mobile Application Development",
+    "unit_id": 265,
+    "type": "advantages",
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "question": "### UNIT 5: Cloud Security\n\n#### Introduction\n\nCloud security ensures data protection vs Unit 5: Cloud Security: explain the differences.",
+    "subject": "Cloud Computing",
+    "subject_id": 43,
+    "unit": "Unit 4: Cloud Deployment Models",
+    "unit_id": 275,
+    "type": "comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "question": "List the steps for This unit explains core concepts of Engineering Mathematics I with process-level reasoning, control flow, and concept mapping for search-friendly understanding.",
+    "subject": "Engineering Mathematics I",
+    "subject_id": 7,
+    "unit": "Unit 2: Core Concepts and Process Management",
+    "unit_id": 153,
+    "type": "process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "question": "Describe ### UNIT 2: Set Theory and Relations\n\n#### Introduction\n\nSet theory is a fundamental concept in mathematics that deals with collections of objects in detail.",
+    "subject": "Discrete Mathematics",
+    "subject_id": 19,
+    "unit": "Unit 1: Logic and Proof Techniques",
+    "unit_id": 192,
+    "type": "explanation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 37,
+    "question": "How would you use ### UNIT 5: Probability and Statistics\n\n#### Introduction\n\nProbability and statistics deal with the analysis of random events and data?",
+    "subject": "Engineering Mathematics II",
+    "subject_id": 13,
+    "unit": "Unit 3: Laplace Transforms",
+    "unit_id": 174,
+    "type": "application",
+    "difficulty": "easy"
+  },
+  {
+    "id": 38,
+    "question": "List the steps for Unit 5: Applications and Case Studies.",
+    "subject": "Engineering Physics",
+    "subject_id": 9,
+    "unit": "Unit 2: Core Concepts and Process Management",
+    "unit_id": 163,
+    "type": "process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 39,
+    "question": "Differentiate between #### Detailed Explanation\n\n**Clustering Techniques**\nClustering groups similar data points together and ### UNIT 4: Neural Networks\n\n#### Introduction\n\nNeural networks are computational models inspired by.",
+    "subject": "Machine Learning",
+    "subject_id": 36,
+    "unit": "Unit 5: Model Evaluation",
+    "unit_id": 251,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 40,
+    "question": "What is the role of Queue follows FIFO using enqueue and dequeue operations?",
+    "subject": "Data Structures",
+    "subject_id": 12,
+    "unit": "Unit 1: Core Concepts",
+    "unit_id": 167,
+    "type": "conceptual",
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "question": "What do you understand by ### UNIT 4: Fourier Series\n\n#### Introduction\n\nFourier series represent periodic functions as sums o?",
+    "subject": "Engineering Mathematics II",
+    "subject_id": 13,
+    "unit": "Unit 2: Multiple Integrals",
+    "unit_id": 173,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 42,
+    "question": "Where is #### Detailed Explanation\n\n**Classification and Clustering**\nIdentify patterns used?",
+    "subject": "Data Warehousing & Mining",
+    "subject_id": 32,
+    "unit": "Unit 5: Clustering and Classification",
+    "unit_id": 241,
+    "type": "application",
+    "difficulty": "easy"
+  },
+  {
+    "id": 43,
+    "question": "What is ### UNIT 1: Cloud Fundamentals\n\n#### Introduction\n\nCloud computing provides on-demand access to comp?",
+    "subject": "Cloud Computing",
+    "subject_id": 43,
+    "unit": "Unit 1: Cloud Fundamentals",
+    "unit_id": 272,
+    "type": "definition",
+    "difficulty": "easy"
+  },
+  {
+    "id": 44,
+    "question": "What are the merits of Unit 2: Core Concepts and Process Management?",
+    "subject": "Engineering Physics",
+    "subject_id": 9,
+    "unit": "Unit 5: Applications and Case Studies",
+    "unit_id": 166,
+    "type": "advantages",
+    "difficulty": "easy"
+  },
+  {
+    "id": 45,
+    "question": "Discuss the advantages of using This unit discusses different types of pollution, their causes, and control measures.",
+    "subject": "Environmental Science",
+    "subject_id": 15,
+    "unit": "Unit 4: Environmental Pollution",
+    "unit_id": 185,
+    "type": "advantages",
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "question": "List the steps for It focuses on organizing code in a modular and reusable manner.",
+    "subject": "Object Oriented Programming",
+    "subject_id": 18,
+    "unit": "Unit 5: Exception Handling and File Handling",
+    "unit_id": 191,
+    "type": "process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 47,
+    "question": "How does Unit 3: Design Concepts work?",
+    "subject": "Software Engineering",
+    "subject_id": 26,
+    "unit": "Unit 2: Requirements Engineering",
+    "unit_id": 218,
+    "type": "explanation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 48,
+    "question": "Give a definition of #### Applications\n\nUsed in secure systems.",
+    "subject": "Cryptography & Network Security",
+    "subject_id": 38,
+    "unit": "Unit 1: Cryptography Basics",
+    "unit_id": 257,
+    "type": "definition",
+    "difficulty": "easy"
+  },
+  {
+    "id": 49,
+    "question": "Give a definition of #### Detailed Explanation\n\n**Memory Hierarchy**\nMemory is organized in levels such as registers, cache, main memory, and secondary storage.",
+    "subject": "Computer Organization",
+    "subject_id": 20,
+    "unit": "Unit 5: Control Unit",
+    "unit_id": 201,
+    "type": "definition",
+    "difficulty": "easy"
+  },
+  {
+    "id": 50,
+    "question": "How is This unit focuses on double and triple integrals and their applications different from They are used to calculate volumes, areas, and other quantities in higher dimensions?",
+    "subject": "Engineering Mathematics II",
+    "subject_id": 13,
+    "unit": "Unit 5: Probability and Statistics",
+    "unit_id": 176,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 51,
+    "question": "Describe the process of #### Detailed Explanation\n\n**Types of Pollution**\nMajor types include air, water, soil, and noise pollution.",
+    "subject": "Environmental Science",
+    "subject_id": 15,
+    "unit": "Unit 5: Sustainable Development",
+    "unit_id": 186,
+    "type": "process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 52,
+    "question": "Why is ### UNIT 1: Logic and Proof Techniques\n\n#### Introduction\n\nLogic forms the foundation of mathematica important?",
+    "subject": "Discrete Mathematics",
+    "subject_id": 19,
+    "unit": "Unit 2: Set Theory and Relations",
+    "unit_id": 193,
+    "type": "advantages",
+    "difficulty": "easy"
+  },
+  {
+    "id": 53,
+    "question": "What is Unit 2: Symmetric Key Cryptography?",
+    "subject": "Cryptography & Network Security",
+    "subject_id": 38,
+    "unit": "Unit 2: Symmetric Key Cryptography",
+    "unit_id": 258,
+    "type": "definition",
+    "difficulty": "hard"
+  },
+  {
+    "id": 54,
+    "question": "What is the significance of #### Detailed Explanation\n\n**Threats and Solutions**\nIncludes encryption and access control?",
+    "subject": "Cloud Computing",
+    "subject_id": 43,
+    "unit": "Unit 1: Cloud Fundamentals",
+    "unit_id": 272,
+    "type": "explanation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 55,
+    "question": "### UNIT 1: OOP Concepts\n\n#### Introduction\n\nObject Oriented Programming (OOP) is a programming para vs Unit 3: Inheritance: explain the differences.",
+    "subject": "Object Oriented Programming",
+    "subject_id": 18,
+    "unit": "Unit 3: Inheritance",
+    "unit_id": 189,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 56,
+    "question": "Explain the concept of Unit 1: Algorithm Analysis.",
+    "subject": "Design and Analysis of Algorithms",
+    "subject_id": 25,
+    "unit": "Unit 5: NP-Complete Problems",
+    "unit_id": 216,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 57,
+    "question": "Explain the concept of ### UNIT 3: Control Structures\n\n#### Introduction\n\nControl structures determine the flow of executio.",
+    "subject": "Programming for Problem Solving",
+    "subject_id": 6,
+    "unit": "Unit 3: Control Structures",
+    "unit_id": 149,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 58,
+    "question": "Describe ### UNIT 1: Mobile Communication Basics\n\n#### Introduction\n\nMobile computing enables communication o in detail.",
+    "subject": "Mobile Computing",
+    "subject_id": 39,
+    "unit": "Unit 4: Mobile Application Development",
+    "unit_id": 265,
+    "type": "explanation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 59,
+    "question": "This unit introduces the foundational concepts of Engineering Mathematics I, key definitions, scope, vs This unit introduces the foundational concepts of Engineering Mathematics I, key definitions, scope, and academic context for structured learning: explain the differences.",
+    "subject": "Engineering Mathematics I",
+    "subject_id": 7,
+    "unit": "Unit 3: Design and Implementation",
+    "unit_id": 154,
+    "type": "comparison",
+    "difficulty": "medium"
+  },
+  {
+    "id": 60,
+    "question": "What do you understand by This unit presents applications, case studies, and analytical methods in Professional Ethics to strengthen concept-based learning and revision?",
+    "subject": "Professional Ethics",
+    "subject_id": 47,
+    "unit": "Unit 3: Design and Implementation",
+    "unit_id": 284,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 61,
+    "question": "What is the difference between #### Applications\n\nUsed in IoT design and Unit 2: Sensors and Devices?",
+    "subject": "Internet of Things",
+    "subject_id": 44,
+    "unit": "Unit 3: Communication Protocols",
+    "unit_id": 279,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 62,
+    "question": "Why do we need Introduction to Data Structures?",
+    "subject": "Data Structures",
+    "subject_id": 12,
+    "unit": "Unit 1: Core Concepts",
+    "unit_id": 167,
+    "type": "conceptual",
+    "difficulty": "easy"
+  },
+  {
+    "id": 63,
+    "question": "What are the stages of Unit 3: Design and Implementation?",
+    "subject": "Engineering Physics",
+    "subject_id": 9,
+    "unit": "Unit 1: Foundations",
+    "unit_id": 162,
+    "type": "process",
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "question": "What are the merits of ### UNIT 1: Mobile Communication Basics\n\n#### Introduction\n\nMobile computing enables communication on the move?",
+    "subject": "Mobile Computing",
+    "subject_id": 39,
+    "unit": "Unit 4: Mobile Application Development",
+    "unit_id": 265,
+    "type": "advantages",
+    "difficulty": "medium"
+  },
+  {
+    "id": 65,
+    "question": "What is ### UNIT 1: Algorithm Analysis\n\n#### Introduction\n\nAlgorithm analysis evaluates the efficiency of algorithms in terms of time and space complexity?",
+    "subject": "Design and Analysis of Algorithms",
+    "subject_id": 25,
+    "unit": "Unit 2: Divide and Conquer",
+    "unit_id": 213,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 66,
+    "question": "Explain the benefits of ### UNIT 1: Network Fundamentals\n\n#### Introduction\n\nComputer networks connect devices for communica.",
+    "subject": "Computer Networks",
+    "subject_id": 27,
+    "unit": "Unit 5: Application Layer",
+    "unit_id": 226,
+    "type": "advantages",
+    "difficulty": "hard"
+  },
+  {
+    "id": 67,
+    "question": "What do you understand by ### UNIT 1: Introduction to DBMS\n\n#### Introduction\n\nA Database Management System (DBMS) is software that manages databases and provides mechanisms for storing, retrieving, and managing data?",
+    "subject": "Database Management Systems",
+    "subject_id": 21,
+    "unit": "Unit 4: Transaction Management",
+    "unit_id": 205,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 68,
+    "question": "Describe ### UNIT 4: Dynamic Programming\n\n#### Introduction\n\nDynamic programming solves problems by breaking  in detail.",
+    "subject": "Design and Analysis of Algorithms",
+    "subject_id": 25,
+    "unit": "Unit 3: Greedy Algorithms",
+    "unit_id": 214,
+    "type": "explanation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "question": "Explain the concept of This unit focuses on different types of memory and their characteristics.",
+    "subject": "Digital Logic Design",
+    "subject_id": 14,
+    "unit": "Unit 2: Logic Gates and Combinational Circuits",
+    "unit_id": 178,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 70,
+    "question": "Describe a practical application of This unit focuses on error handling and file operations in OOP.",
+    "subject": "Object Oriented Programming",
+    "subject_id": 18,
+    "unit": "Unit 2: Classes and Objects",
+    "unit_id": 188,
+    "type": "application",
+    "difficulty": "easy"
+  },
+  {
+    "id": 71,
+    "question": "This unit presents applications, case studies, and analytical methods in Engineering Mathematics I to strengthen concept-based learning and revision vs This unit introduces the foundational concepts of Engineering Mathematics I, key definitions, scope,: explain the differences.",
+    "subject": "Engineering Mathematics I",
+    "subject_id": 7,
+    "unit": "Unit 1: Foundations",
+    "unit_id": 152,
+    "type": "comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": 72,
+    "question": "A stack follows Last In First Out (LIFO), while a queue follows First In First Out (FIFO) vs Data Structures 20CS2T01 Seed Minimal Content 20CS2T01. Seed Minimal Content 20CS2T01 Data Structures topic coverage: Stack follows LIFO with push and: explain the differences.",
+    "subject": "Data Structures",
+    "subject_id": 12,
+    "unit": "Unit 1: Core Concepts",
+    "unit_id": 167,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 73,
+    "question": "List the steps for Unit 1: Introduction to ML.",
+    "subject": "Machine Learning",
+    "subject_id": 36,
+    "unit": "Unit 2: Supervised Learning",
+    "unit_id": 248,
+    "type": "process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 74,
+    "question": "What are the merits of Unit 3: Asymmetric Cryptography?",
+    "subject": "Cryptography & Network Security",
+    "subject_id": 38,
+    "unit": "Unit 3: Asymmetric Cryptography",
+    "unit_id": 259,
+    "type": "advantages",
+    "difficulty": "hard"
+  },
+  {
+    "id": 75,
+    "question": "What do you understand by ### UNIT 4: Server-Side Technologies\n\n#### Introduction\n\nHandles backend logic?",
+    "subject": "Web Technologies",
+    "subject_id": 33,
+    "unit": "Unit 3: JavaScript",
+    "unit_id": 244,
+    "type": "definition",
+    "difficulty": "medium"
+  },
+  {
+    "id": 76,
+    "question": "Explain why ### UNIT 2: Set Theory and Relations\n\n#### Introduction\n\nSet theory is a fundamental concept in math is important.",
+    "subject": "Discrete Mathematics",
+    "subject_id": 19,
+    "unit": "Unit 2: Set Theory and Relations",
+    "unit_id": 193,
+    "type": "conceptual",
+    "difficulty": "hard"
+  },
+  {
+    "id": 77,
+    "question": "How would you use #### Applications\n\nUsed in organizations?",
+    "subject": "Cloud Computing",
+    "subject_id": 43,
+    "unit": "Unit 3: Cloud Services Models",
+    "unit_id": 274,
+    "type": "application",
+    "difficulty": "easy"
+  },
+  {
+    "id": 78,
+    "question": "Describe a practical application of ### UNIT 4: Neural Networks\n\n#### Introduction\n\nNeural networks are computational models inspired by.",
+    "subject": "Machine Learning",
+    "subject_id": 36,
+    "unit": "Unit 1: Introduction to ML",
+    "unit_id": 247,
+    "type": "application",
+    "difficulty": "hard"
+  },
+  {
+    "id": 79,
+    "question": "#### Detailed Explanation\n\n**Concepts**\nCellular networks vs ### UNIT 1: Mobile Communication Basics\n\n#### Introduction\n\nMobile computing enables communication on the move: explain the differences.",
+    "subject": "Mobile Computing",
+    "subject_id": 39,
+    "unit": "Unit 2: Wireless Networks",
+    "unit_id": 263,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 80,
+    "question": "Where is ### UNIT 1: Number Systems and Boolean Algebra\n\n#### Introduction\n\nDigital systems operate using binary numbers and logical operations used?",
+    "subject": "Digital Logic Design",
+    "subject_id": 14,
+    "unit": "Unit 3: Sequential Circuits",
+    "unit_id": 179,
+    "type": "application",
+    "difficulty": "easy"
+  },
+  {
+    "id": 81,
+    "question": "Differentiate between This unit introduces the foundational concepts of Engineering Mathematics I, key definitions, scope, and Unit 5: Applications and Case Studies.",
+    "subject": "Engineering Mathematics I",
+    "subject_id": 7,
+    "unit": "Unit 5: Applications and Case Studies",
+    "unit_id": 156,
+    "type": "comparison",
+    "difficulty": "easy"
+  },
+  {
+    "id": 82,
+    "question": "Explain the steps involved in #### Detailed Explanation\n\n**Algorithms**\nAES, DES.",
+    "subject": "Cryptography & Network Security",
+    "subject_id": 38,
+    "unit": "Unit 1: Cryptography Basics",
+    "unit_id": 257,
+    "type": "process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 83,
+    "question": "Describe #### Detailed Explanation\n\n**Concepts**\nCellular networks in detail.",
+    "subject": "Mobile Computing",
+    "subject_id": 39,
+    "unit": "Unit 2: Wireless Networks",
+    "unit_id": 263,
+    "type": "explanation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 84,
+    "question": "Explain **Examples**\nTravelling Salesman Problem.",
+    "subject": "Design and Analysis of Algorithms",
+    "subject_id": 25,
+    "unit": "Unit 3: Greedy Algorithms",
+    "unit_id": 214,
+    "type": "explanation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 85,
+    "question": "Describe a practical application of Unit 1: Foundations.",
+    "subject": "Engineering Physics",
+    "subject_id": 9,
+    "unit": "Unit 1: Foundations",
+    "unit_id": 162,
+    "type": "application",
+    "difficulty": "hard"
+  },
+  {
+    "id": 86,
+    "question": "Explain The goal is to learn a mapping from input features to output labels.",
+    "subject": "Machine Learning",
+    "subject_id": 36,
+    "unit": "Unit 2: Supervised Learning",
+    "unit_id": 248,
+    "type": "explanation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 87,
+    "question": "How does #### Detailed Explanation\n\n**Algorithms**\nAES, DES work?",
+    "subject": "Cryptography & Network Security",
+    "subject_id": 38,
+    "unit": "Unit 3: Asymmetric Cryptography",
+    "unit_id": 259,
+    "type": "explanation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 88,
+    "question": "Explain the benefits of It provides scalable and fault-tolerant solutions for Big Data processing.",
+    "subject": "Big Data Analytics",
+    "subject_id": 42,
+    "unit": "Unit 1: Big Data Fundamentals",
+    "unit_id": 267,
+    "type": "advantages",
+    "difficulty": "hard"
+  },
+  {
+    "id": 89,
+    "question": "What is the significance of Stack operations are push and pop; queue operations are enqueue and dequeue?",
+    "subject": "Data Structures",
+    "subject_id": 12,
+    "unit": "Unit 2: Stack Queue Searching and Recursion",
+    "unit_id": 168,
+    "type": "explanation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "question": "Explain Data Structures: Stack follows LIFO using push and pop operations.",
+    "subject": "Data Structures",
+    "subject_id": 12,
+    "unit": "Unit 2: Stack Queue Searching and Recursion",
+    "unit_id": 168,
+    "type": "explanation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 91,
+    "question": "How does Unit 3: Synchronization work?",
+    "subject": "Distributed Systems",
+    "subject_id": 37,
+    "unit": "Unit 3: Synchronization",
+    "unit_id": 254,
+    "type": "explanation",
+    "difficulty": "hard"
+  },
+  {
+    "id": 92,
+    "question": "What are the stages of #### Detailed Explanation\n\n**Database Concepts**\nA database is a collection of related data?",
+    "subject": "Database Management Systems",
+    "subject_id": 21,
+    "unit": "Unit 4: Transaction Management",
+    "unit_id": 205,
+    "type": "process",
+    "difficulty": "easy"
+  },
+  {
+    "id": 93,
+    "question": "What are the merits of ### UNIT 4: Testing Strategies\n\n#### Introduction\n\nTesting ensures software quality?",
+    "subject": "Software Engineering",
+    "subject_id": 26,
+    "unit": "Unit 3: Design Concepts",
+    "unit_id": 219,
+    "type": "advantages",
+    "difficulty": "hard"
+  },
+  {
+    "id": 94,
+    "question": "Discuss They are fundamental in abstract mathematics and computer science.",
+    "subject": "Discrete Mathematics",
+    "subject_id": 19,
+    "unit": "Unit 5: Algebraic Structures",
+    "unit_id": 196,
+    "type": "explanation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 95,
+    "question": "How does Unit 5: Programmable Logic Devices relate to Digital Logic Design?",
+    "subject": "Digital Logic Design",
+    "subject_id": 14,
+    "unit": "Unit 5: Programmable Logic Devices",
+    "unit_id": 181,
+    "type": "conceptual",
+    "difficulty": "easy"
+  },
+  {
+    "id": 96,
+    "question": "How does Unit 2: Network Theorems relate to Basic Electrical Engineering?",
+    "subject": "Basic Electrical Engineering",
+    "subject_id": 8,
+    "unit": "Unit 2: Network Theorems",
+    "unit_id": 158,
+    "type": "conceptual",
+    "difficulty": "easy"
+  },
+  {
+    "id": 97,
+    "question": "How does ### UNIT 5: Sustainable Development\n\n#### Introduction\n\nSustainable development aims to meet present needs without compromising the ability of future generations to meet their needs relate to Environmental Science?",
+    "subject": "Environmental Science",
+    "subject_id": 15,
+    "unit": "Unit 1: Ecosystems",
+    "unit_id": 182,
+    "type": "conceptual",
+    "difficulty": "medium"
+  },
+  {
+    "id": 98,
+    "question": "Describe a practical application of ### UNIT 2: Data Link Layer\n\n#### Introduction\n\nEnsures reliable data transfer.",
+    "subject": "Computer Networks",
+    "subject_id": 27,
+    "unit": "Unit 3: Network Layer",
+    "unit_id": 224,
+    "type": "application",
+    "difficulty": "easy"
+  },
+  {
+    "id": 99,
+    "question": "Where is Unit 4: Electrical Machines used?",
+    "subject": "Basic Electrical Engineering",
+    "subject_id": 8,
+    "unit": "Unit 4: Electrical Machines",
+    "unit_id": 160,
+    "type": "application",
+    "difficulty": "easy"
+  },
+  {
+    "id": 100,
+    "question": "What is the role of #### Applications\n\nUsed in ML?",
+    "subject": "Data Warehousing & Mining",
+    "subject_id": 32,
+    "unit": "Unit 4: Association Rules",
+    "unit_id": 240,
+    "type": "conceptual",
+    "difficulty": "medium"
+  }
+]

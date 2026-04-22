@@ -1,0 +1,74 @@
+{
+  "timestamp": "1774113896.894078",
+  "checks": {
+    "Core Files": {
+      "status": "OK",
+      "message": "All core files present"
+    },
+    "Database": {
+      "status": "OK",
+      "message": "Database healthy",
+      "details": {
+        "subjects": 42,
+        "units": 140,
+        "lessons": 138,
+        "reference_pdfs": 43,
+        "pdf_chunks": 253,
+        "chat_queries": 67318,
+        "active_pdfs": 39
+      }
+    },
+    "Chatbot API": {
+      "status": "OK",
+      "message": "Chatbot API functional",
+      "http_status": 200
+    },
+    "PDF Pipeline": {
+      "status": "OK",
+      "message": "PDF pipeline operational",
+      "active_pdfs": 39,
+      "total_pdfs": 43,
+      "chunks": 253
+    },
+    "Templates & Static": {
+      "status": "OK",
+      "message": "Templates and static files verified",
+      "details": {
+        "templates": 29,
+        "static": 6,
+        "staticfiles": 0
+      }
+    },
+    "Scripts": {
+      "status": "OK",
+      "script_count": 28
+    },
+    "Reports": {
+      "status": "OK",
+      "report_count": 19,
+      "reports": [
+        "chatbot_100q_validation_report.json",
+        "chatbot_100q_validation_stream_report.json",
+        "chatbot_100q_validation_stream_report_postfix.json",
+        "chatbot_quality_demo_after.json",
+        "chatbot_quality_demo_compare.json",
+        "chatbot_quality_report.json",
+        "chatbot_quality_report_llm.json",
+        "database_knowledge_map.json",
+        "demo_trained_question_validation.json",
+        "final_10000q_validation.json",
+        "final_project_audit.json",
+        "FINAL_PROJECT_AUDIT_SUMMARY.json",
+        "generated_10000_questions.json",
+        "openrouter_model_evaluation_report.json",
+        "pdf_20q_validation.json",
+        "pdf_50q_validation.json",
+        "pdf_ingestion_retry.json",
+        "runtime_provider_validation.json",
+        "system_health_check.json"
+      ]
+    }
+  },
+  "overall_status": "✅ CLEAN & STABLE",
+  "issues": []
+}

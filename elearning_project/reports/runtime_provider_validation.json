@@ -1,0 +1,74 @@
+{
+  "config": {
+    "openrouter_api_key_exists": false,
+    "chatbot_openrouter_model": "openrouter/free",
+    "openrouter_timeout_seconds": 60,
+    "openrouter_enabled_func": false
+  },
+  "questions": [
+    {
+      "question": "What is Object Oriented Programming?",
+      "status": 200,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "final_model": "deterministic",
+      "candidate_source": "DB",
+      "retrieved_chunk_count": 5,
+      "insufficient_context": false,
+      "references_count": 5,
+      "has_references_section": true,
+      "has_main_answer": true,
+      "has_key_concepts": true,
+      "has_example": true,
+      "fallback_reason": null
+    },
+    {
+      "question": "Explain polymorphism in object oriented programming.",
+      "status": 200,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "final_model": "deterministic",
+      "candidate_source": "DB",
+      "retrieved_chunk_count": 5,
+      "insufficient_context": false,
+      "references_count": 5,
+      "has_references_section": true,
+      "has_main_answer": true,
+      "has_key_concepts": true,
+      "has_example": true,
+      "fallback_reason": null
+    },
+    {
+      "question": "What is a variable in C?",
+      "status": 200,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "final_model": "deterministic",
+      "candidate_source": "DB",
+      "retrieved_chunk_count": 5,
+      "insufficient_context": false,
+      "references_count": 5,
+      "has_references_section": true,
+      "has_main_answer": true,
+      "has_key_concepts": true,
+      "has_example": true,
+      "fallback_reason": null
+    },
+    {
+      "question": "What is stack data structure?",
+      "status": 200,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "final_model": "deterministic",
+      "candidate_source": "DB",
+      "retrieved_chunk_count": 5,
+      "insufficient_context": false,
+      "references_count": 5,
+      "has_references_section": true,
+      "has_main_answer": true,
+      "has_key_concepts": true,
+      "has_example": true,
+      "fallback_reason": null
+    }
+  ]
+}

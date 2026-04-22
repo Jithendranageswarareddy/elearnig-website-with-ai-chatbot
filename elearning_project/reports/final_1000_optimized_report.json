@@ -1,0 +1,660 @@
+{
+  "total_batches": 10,
+  "batch_size": 100,
+  "created_at": "2026-03-22T11:58:30.044016+00:00",
+  "updated_at": "2026-03-22T11:59:46.260265+00:00",
+  "batches": [
+    {
+      "batch_number": 1,
+      "questions_tested": 100,
+      "accuracy_avg": 6.68,
+      "relevance_avg": 0.933,
+      "clarity_avg": 6.81,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 94
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 72
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Data Structures Lab",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Engineering Mathematics I",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Engineering Physics",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "applications",
+          "avg_relevance": 0.067
+        },
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.5
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: strengthened subject/unit gate for keyword matches",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": 0.0,
+        "relevance_delta": 0.0,
+        "clarity_delta": 0.0
+      }
+    },
+    {
+      "batch_number": 2,
+      "questions_tested": 100,
+      "accuracy_avg": 6.645,
+      "relevance_avg": 0.972,
+      "clarity_avg": 6.77,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 92
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 75
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 1
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Engineering Mathematics II",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Machine Learning",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Digital Logic Lab",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.5
+        },
+        {
+          "question_type": "applications",
+          "avg_relevance": 0.866
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": -0.035,
+        "relevance_delta": 0.039,
+        "clarity_delta": -0.04
+      }
+    },
+    {
+      "batch_number": 3,
+      "questions_tested": 100,
+      "accuracy_avg": 6.69,
+      "relevance_avg": 1.47,
+      "clarity_avg": 6.745,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 85
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 79
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 2
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Environmental Science",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Basic Electrical Engineering",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "AI Lab",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.429
+        },
+        {
+          "question_type": "applications",
+          "avg_relevance": 1.317
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": 0.045,
+        "relevance_delta": 0.498,
+        "clarity_delta": -0.025
+      }
+    },
+    {
+      "batch_number": 4,
+      "questions_tested": 100,
+      "accuracy_avg": 6.67,
+      "relevance_avg": 1.106,
+      "clarity_avg": 6.76,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 90
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 75
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 2
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Professional Ethics",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "AI Lab",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "DBMS Lab",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "applications",
+          "avg_relevance": 0.53
+        },
+        {
+          "question_type": "concepts",
+          "avg_relevance": 0.826
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": -0.02,
+        "relevance_delta": -0.364,
+        "clarity_delta": 0.015
+      }
+    },
+    {
+      "batch_number": 5,
+      "questions_tested": 100,
+      "accuracy_avg": 6.57,
+      "relevance_avg": 1.031,
+      "clarity_avg": 6.715,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 91
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 79
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 2
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Environmental Science",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Programming for Problem Solving",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Digital Logic Lab",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "applications",
+          "avg_relevance": 0.838
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": -0.1,
+        "relevance_delta": -0.075,
+        "clarity_delta": -0.045
+      }
+    },
+    {
+      "batch_number": 6,
+      "questions_tested": 100,
+      "accuracy_avg": 6.85,
+      "relevance_avg": 1.65,
+      "clarity_avg": 6.815,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 83
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 73
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 2
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Web Tech Lab",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Distributed Systems",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Artificial Intelligence",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "applications",
+          "avg_relevance": 0.467
+        },
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.5
+        },
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 1.0
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": 0.28,
+        "relevance_delta": 0.619,
+        "clarity_delta": 0.1
+      }
+    },
+    {
+      "batch_number": 7,
+      "questions_tested": 100,
+      "accuracy_avg": 6.815,
+      "relevance_avg": 1.691,
+      "clarity_avg": 6.785,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 83
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 74
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 3
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Operating Systems",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Security Lab",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Compiler Design",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "applications",
+          "avg_relevance": 0.367
+        },
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.5
+        },
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.5
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": -0.035,
+        "relevance_delta": 0.041,
+        "clarity_delta": -0.03
+      }
+    },
+    {
+      "batch_number": 8,
+      "questions_tested": 100,
+      "accuracy_avg": 6.865,
+      "relevance_avg": 1.379,
+      "clarity_avg": 6.86,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 88
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 68
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 1
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Artificial Intelligence",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Internet of Things",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Digital Logic Lab",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.5
+        },
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.808
+        },
+        {
+          "question_type": "concepts",
+          "avg_relevance": 1.333
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": 0.05,
+        "relevance_delta": -0.312,
+        "clarity_delta": 0.075
+      }
+    },
+    {
+      "batch_number": 9,
+      "questions_tested": 100,
+      "accuracy_avg": 6.725,
+      "relevance_avg": 1.247,
+      "clarity_avg": 6.805,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 91
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 72
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 1
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "OOP Lab",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Data Structures Lab",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Mobile Computing",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "applications",
+          "avg_relevance": 0.883
+        },
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.95
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": -0.14,
+        "relevance_delta": -0.132,
+        "clarity_delta": -0.055
+      }
+    },
+    {
+      "batch_number": 10,
+      "questions_tested": 100,
+      "accuracy_avg": 6.71,
+      "relevance_avg": 1.251,
+      "clarity_avg": 6.775,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 89
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 74
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 2
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Data Structures Lab",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Internet of Things",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "OOP Lab",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.0
+        },
+        {
+          "question_type": "applications",
+          "avg_relevance": 1.34
+        },
+        {
+          "question_type": "concepts",
+          "avg_relevance": 1.426
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": -0.015,
+        "relevance_delta": 0.004,
+        "clarity_delta": -0.03
+      }
+    }
+  ],
+  "overall_metrics": {
+    "accuracy": 6.722,
+    "relevance": 1.273,
+    "clarity": 6.784,
+    "best_batch": {
+      "batch_number": 8,
+      "questions_tested": 100,
+      "accuracy_avg": 6.865,
+      "relevance_avg": 1.379,
+      "clarity_avg": 6.86,
+      "formatting_pass_rate": 100.0,
+      "top_3_issues": [
+        {
+          "issue": "wrong_subject",
+          "count": 88
+        },
+        {
+          "issue": "irrelevant_content",
+          "count": 68
+        },
+        {
+          "issue": "broken_sentence_fragment",
+          "count": 1
+        }
+      ],
+      "weak_subjects": [
+        {
+          "subject": "Artificial Intelligence",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Internet of Things",
+          "avg_relevance": 0.0
+        },
+        {
+          "subject": "Digital Logic Lab",
+          "avg_relevance": 0.0
+        }
+      ],
+      "weak_question_types": [
+        {
+          "question_type": "edge_cases",
+          "avg_relevance": 0.5
+        },
+        {
+          "question_type": "comparisons",
+          "avg_relevance": 0.808
+        },
+        {
+          "question_type": "concepts",
+          "avg_relevance": 1.333
+        }
+      ],
+      "best_issue_selected": "wrong_subject",
+      "fix_applied": "search_service.py: subject gate already strengthened",
+      "improvement_vs_previous_batch": {
+        "accuracy_delta": 0.05,
+        "relevance_delta": -0.312,
+        "clarity_delta": 0.075
+      }
+    },
+    "top_improvements": [
+      {
+        "from_batch": 5,
+        "to_batch": 6,
+        "accuracy_delta": 0.28,
+        "relevance_delta": 0.619,
+        "clarity_delta": 0.1
+      },
+      {
+        "from_batch": 2,
+        "to_batch": 3,
+        "accuracy_delta": 0.045,
+        "relevance_delta": 0.498,
+        "clarity_delta": -0.025
+      },
+      {
+        "from_batch": 6,
+        "to_batch": 7,
+        "accuracy_delta": -0.035,
+        "relevance_delta": 0.041,
+        "clarity_delta": -0.03
+      }
+    ],
+    "final_verdict": "needs_more_tuning"
+  }
+}

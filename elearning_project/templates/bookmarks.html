@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Bookmarks{% endblock %}
+{% block content %}
+<section class="page-shell section-stack">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">Your Bookmarks</h1>
+      <p class="section-subtitle">Quick access to saved lessons.</p>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body p-0">
+      <ul class="list-group list-group-flush">
+        {% for b in bookmarks %}
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="{% url 'read_lesson' b.lesson.id %}" class="fw-500">{{ b.lesson.title }}</a>
+            <a href="{% url 'read_lesson' b.lesson.id %}" class="btn btn-primary btn-sm">Open</a>
+          </li>
+        {% empty %}
+          <li class="list-group-item">
+            <div class="empty-state py-4">
+              <span class="empty-state-icon"><i class="bi bi-bookmark-heart"></i></span>
+              <div>
+                <h3 class="h5 mb-1">No bookmarks yet</h3>
+                <p>Save important lessons while reading to build your quick-revision list.</p>
+              </div>
+              <a href="{% url 'learn_subjects' %}" class="btn btn-primary btn-sm">Explore Subjects</a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

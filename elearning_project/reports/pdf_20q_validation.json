@@ -1,0 +1,333 @@
+{
+  "summary": {
+    "total_questions": 20,
+    "passed_questions": 20,
+    "failed_questions": 0,
+    "pass_percentage": 100.0,
+    "top_failure_reasons": {},
+    "avg_accuracy": 8.0,
+    "avg_relevance": 5.89
+  },
+  "details": [
+    {
+      "id": 1,
+      "question": "Explain this concept from the selected PDF: Operating systems manage resources and process scheduling",
+      "pdf_id": 17,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    },
+    {
+      "id": 2,
+      "question": "Explain this concept from the selected PDF: Seed Minimal Content 20CS4T01 Operating Systems topic coverage: Process scheduling allocates CPU time among multiple processes",
+      "pdf_id": 18,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    },
+    {
+      "id": 3,
+      "question": "Explain this concept from the selected PDF: Data Structures: Stack follows LIFO using push and pop operations",
+      "pdf_id": 19,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.91
+      }
+    },
+    {
+      "id": 4,
+      "question": "Explain this concept from the selected PDF: DBMS: Transactions follow ACID properties: Atomicity, Consistency, Isolation and Durability",
+      "pdf_id": 20,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.83
+      }
+    },
+    {
+      "id": 5,
+      "question": "Explain this concept from the selected PDF: Operating systems manage resources and process scheduling",
+      "pdf_id": 21,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    },
+    {
+      "id": 6,
+      "question": "Explain this concept from the selected PDF: Operating systems manage resources and process scheduling",
+      "pdf_id": 22,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    },
+    {
+      "id": 7,
+      "question": "Explain this concept from the selected PDF: Operating systems manage resources and process scheduling",
+      "pdf_id": 23,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    },
+    {
+      "id": 8,
+      "question": "Explain this concept from the selected PDF: COMPUTER NETWORKS [R15A0513] LECTURE NOTES B.TECH III YEAR II SEM (R15) (2019-20) DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING MALLA",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.67
+      }
+    },
+    {
+      "id": 9,
+      "question": "Explain this concept from the selected PDF: UNIT - IV: Transport Layer: Services provided to the upper layers elements of transport protocol addressing connection establishment,",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.67
+      }
+    },
+    {
+      "id": 10,
+      "question": "Explain this concept from the selected PDF: INDEX UNIT NO TOPIC PAGE NO I INTRODUCTION TO NETOWRKS 1 TYPES OF NETWORKS, 4 INTRODUCTION TO PYSICAL LAYER 18 COMPARISON OF OSI AND TCP/IP",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    },
+    {
+      "id": 11,
+      "question": "Explain this concept from the selected PDF: A well-known example of a distributed system is the World Wide Web",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.91
+      }
+    },
+    {
+      "id": 12,
+      "question": "Explain this concept from the selected PDF: Worse yet, they may not be politically correct",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    },
+    {
+      "id": 13,
+      "question": "Explain this concept from the selected PDF: BOTNET ATTACK: Botnets can be used to perform distributed denial-of-service attack (DDoS attack), steal data, send spam, and allows the",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.62
+      }
+    },
+    {
+      "id": 14,
+      "question": "Explain this concept from the selected PDF: The transmission medium is the physical path by which a message travels from sender to receiver",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.83
+      }
+    },
+    {
+      "id": 15,
+      "question": "Explain this concept from the selected PDF: Transit time is the amount of time required for a message to travel from one device to another",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.83
+      }
+    },
+    {
+      "id": 16,
+      "question": "Explain this concept from the selected PDF: The entire capacity of the link is reserved for transmission between those two devices",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.83
+      }
+    },
+    {
+      "id": 17,
+      "question": "Explain this concept from the selected PDF: network can be calculated using the following formula (n is the number of computers in the network): n(n-1)/2 In a partially connected mesh",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.83
+      }
+    },
+    {
+      "id": 18,
+      "question": "Explain this concept from the selected PDF: If one computer on the network fails, the rest of the network continues to function normally",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.91
+      }
+    },
+    {
+      "id": 19,
+      "question": "Explain this concept from the selected PDF: Others permit data to move in either direction, called bidirectional",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.91
+      }
+    },
+    {
+      "id": 20,
+      "question": "Explain this concept from the selected PDF: Data transfer rate is 10 to 100 mbps",
+      "pdf_id": 24,
+      "status": 200,
+      "passed": true,
+      "reasons": [],
+      "answer": "This topic is not available in the selected syllabus.",
+      "answer_from": "Not available",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 6.0
+      }
+    }
+  ]
+}

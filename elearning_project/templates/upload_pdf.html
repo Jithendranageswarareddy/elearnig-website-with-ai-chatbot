@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Upload Reference PDF{% endblock %}
+{% block content %}
+<section class="page-shell section-stack fade-in">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">Upload Reference PDF</h1>
+      <p class="section-subtitle">Upload syllabus PDFs for immediate approval, extraction, and chatbot indexing.</p>
+    </div>
+    <div class="page-actions">
+      <a href="{% url 'pdf_list' %}" class="btn btn-secondary btn-sm">Back to Library</a>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass form-shell">
+    <div class="card-body">
+      <form method="post" enctype="multipart/form-data" class="row g-3">
+        {% csrf_token %}
+        <div class="col-12">
+          <label class="form-label">Document Title</label>
+          <input type="text" name="title" class="form-control" placeholder="e.g., Data Structures Chapter 5" required>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Subject</label>
+          <select name="subject_id" class="form-select" required>
+            <option value="">Select a subject...</option>
+            {% for subject in subjects %}
+              <option value="{{ subject.id }}">{{ subject.name }} (Semester {{ subject.semester.number }})</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label">PDF File</label>
+          <input type="file" name="file" class="form-control" accept="application/pdf" required>
+          <small class="text-muted-ui d-block mt-2">Max 50MB, PDF format only.</small>
+        </div>
+        <div class="col-12 d-flex gap-2">
+          <button type="submit" class="btn btn-primary flex-grow-1 js-btn-loading" data-loading-text="Uploading...">Upload Document</button>
+          <a href="{% url 'pdf_list' %}" class="btn btn-secondary">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

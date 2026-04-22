@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Search Lessons{% endblock %}
+{% block content %}
+<section class="page-shell section-stack fade-in">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">Search Lessons</h1>
+      <p class="section-subtitle">Find lessons instantly by keyword.</p>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body">
+      <form method="get" class="row g-2 align-items-end">
+        <div class="col-lg-9">
+          <label class="form-label">Search Query</label>
+          <input type="text" name="q" value="{{ request.GET.q }}" class="form-control" placeholder="Search lessons...">
+        </div>
+        <div class="col-lg-3">
+          <button type="submit" class="btn btn-primary w-100 js-btn-loading" data-loading-text="Searching...">Search</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="page-content row g-3">
+    {% if results %}
+      {% for lesson in results %}
+        <div class="col-md-6">
+          <article class="card card-glass h-100">
+            <div class="card-body">
+              <h3 class="h5">{{ lesson.title }}</h3>
+              <p class="mb-3 text-muted-ui">{{ lesson.subject.name }}</p>
+              <a href="{% url 'read_lesson' lesson.id %}" class="btn btn-primary btn-sm">Open Lesson</a>
+            </div>
+          </article>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="col-12">
+        <div class="card card-glass">
+          <div class="card-body text-center">
+            <p class="mb-0 text-muted-ui">No results found.</p>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

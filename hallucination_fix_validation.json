@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-03-20 23:03:45",
+  "test_type": "Hallucination Fix Validation",
+  "status": "FIX_INCOMPLETE",
+  "tests_passed": 2,
+  "tests_total": 3,
+  "accuracy_percent": 66.66666666666666,
+  "tests": [
+    {
+      "test": "CRITICAL: IPL Cricket (Should REJECT)",
+      "query": "What is IPL cricket?",
+      "chunks_retrieved": 2,
+      "expected": "REJECTED",
+      "actual": "PROVIDED_ANSWER",
+      "is_correct": false,
+      "search_time_ms": "402.1",
+      "answer_time_ms": "0.3",
+      "references": 2
+    },
+    {
+      "test": "VALID: Operating System (Should ACCEPT)",
+      "query": "What is operating system?",
+      "chunks_retrieved": 3,
+      "expected": "ACCEPTED",
+      "actual": "PROVIDED_ANSWER",
+      "is_correct": true,
+      "search_time_ms": "28.0",
+      "answer_time_ms": "0.1",
+      "references": 3
+    },
+    {
+      "test": "EDGE: Random Gibberish (Should REJECT)",
+      "query": "asdfghjkl",
+      "chunks_retrieved": 0,
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "is_correct": true,
+      "search_time_ms": "19.7",
+      "answer_time_ms": "0.0",
+      "references": 0
+    }
+  ],
+  "critical_test_result": false,
+  "before_behavior": "Query 4 (IPL cricket) returned answer - HALLUCINATION",
+  "after_behavior": "Query 4 should now return 'No relevant content found' - NO HALLUCINATION"
+}

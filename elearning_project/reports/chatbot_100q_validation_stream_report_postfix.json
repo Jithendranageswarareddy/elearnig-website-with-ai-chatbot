@@ -1,0 +1,1602 @@
+{
+  "summary": {
+    "total_questions": 100,
+    "passed_questions": 97,
+    "failed_questions": 3,
+    "avg_accuracy": 8.05,
+    "avg_clarity": 6.31,
+    "avg_structure": 4.46,
+    "avg_relevance": 5.26,
+    "total_scope_runs": 400,
+    "scope_failures": 3,
+    "issue_counts": {
+      "irrelevant_answer": 3
+    }
+  },
+  "question_rollup": [
+    {
+      "id": 1,
+      "question": "Define algorithm and differentiate it from a program with an example.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 2,
+      "question": "Explain time complexity and space complexity with Big O notation.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.5
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 3,
+      "question": "Compare arrays and linked lists for insertion and deletion operations.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 4,
+      "question": "What is pointer arithmetic in C and where is it useful?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 5,
+      "question": "Explain recursion with a factorial example and its call stack behavior.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 6,
+      "question": "Differentiate stack and queue with real-world applications.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 7,
+      "question": "Write the logic for infix to postfix conversion using stack.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.36
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 8,
+      "question": "Explain circular queue and how overflow/underflow are handled.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 9,
+      "question": "Compare singly, doubly, and circular linked lists.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 10,
+      "question": "Explain binary search and its prerequisite condition.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 11,
+      "question": "What is a binary tree, and how is it different from a BST?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 12,
+      "question": "Explain preorder, inorder, and postorder traversals with use cases.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 13,
+      "question": "What is AVL tree rotation and why is balancing needed?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 14,
+      "question": "Differentiate BFS and DFS with one practical application each.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 15,
+      "question": "Explain hashing and collision resolution techniques.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 16,
+      "question": "Compare chaining and open addressing in hash tables.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 17,
+      "question": "What is object-oriented programming and its four pillars?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 18,
+      "question": "Differentiate class and object with a Java example.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 19,
+      "question": "Explain method overloading versus method overriding.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 20,
+      "question": "What is inheritance and what are its types?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 21,
+      "question": "Explain abstraction and encapsulation with examples.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 22,
+      "question": "What are interfaces in Java and why are they used?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 23,
+      "question": "Differentiate checked and unchecked exceptions.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 24,
+      "question": "Explain JVM, JRE, and JDK differences.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 25,
+      "question": "What is multithreading and thread lifecycle in Java?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 26,
+      "question": "Explain synchronization and race condition.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 27,
+      "question": "Define database and DBMS. Why is DBMS preferred over file system?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 28,
+      "question": "Explain ER model and its key components.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 29,
+      "question": "Differentiate primary key, candidate key, and foreign key.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 30,
+      "question": "What is normalization? Explain 1NF, 2NF, and 3NF.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 31,
+      "question": "Differentiate BCNF and 3NF with an example case.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 32,
+      "question": "Explain transaction and ACID properties.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 33,
+      "question": "What is concurrency control and why is it needed?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 34,
+      "question": "Differentiate serializable and non-serializable schedules.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 35,
+      "question": "Explain deadlock in DBMS and prevention strategies.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 36,
+      "question": "What is indexing? Compare clustered and non-clustered indexes.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.62
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 37,
+      "question": "Define operating system and list major services it provides.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 38,
+      "question": "Explain process and thread differences.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 39,
+      "question": "Draw and explain process state transition model.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 40,
+      "question": "What is CPU scheduling? Compare FCFS, SJF, and Round Robin.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.83
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 41,
+      "question": "Explain starvation and aging in scheduling.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 42,
+      "question": "What is deadlock? Explain Coffman conditions.",
+      "passed": false,
+      "avg_scores": {
+        "accuracy": 7.5,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.0
+      },
+      "failed_scopes": [
+        "global"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Compare paging and segmentation.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 44,
+      "question": "What is virtual memory and demand paging?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 45,
+      "question": "Explain page replacement algorithms: FIFO, LRU, Optimal.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.83
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 46,
+      "question": "What is file allocation? Compare contiguous, linked, indexed methods.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 47,
+      "question": "Explain system call and kernel mode versus user mode.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 48,
+      "question": "Define compiler phases and explain lexical analysis.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 49,
+      "question": "What is token, lexeme, and pattern in lexical analysis?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.5
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 50,
+      "question": "Explain top-down and bottom-up parsing differences.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 51,
+      "question": "What is FIRST and FOLLOW in parser design?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 52,
+      "question": "Explain role of symbol table in compilation.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 53,
+      "question": "What are intermediate code forms and why are they needed?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 54,
+      "question": "Explain code optimization and common optimization techniques.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 55,
+      "question": "Differentiate interpreted and compiled languages.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 56,
+      "question": "Define computer network and classify by coverage area.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 57,
+      "question": "Explain OSI model layers and their functions.",
+      "passed": false,
+      "avg_scores": {
+        "accuracy": 7.5,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.0
+      },
+      "failed_scopes": [
+        "global"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "Compare OSI and TCP/IP models.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 59,
+      "question": "What is subnetting and why is it required?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 60,
+      "question": "Differentiate TCP and UDP with use cases.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 61,
+      "question": "Explain three-way handshake in TCP.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 62,
+      "question": "What is congestion control in transport layer?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 63,
+      "question": "Explain ARP, ICMP, and DNS roles.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 64,
+      "question": "What is routing? Compare distance-vector and link-state.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 65,
+      "question": "Define software engineering and software process models.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.62
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 66,
+      "question": "Compare waterfall, incremental, and agile models.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 67,
+      "question": "What is requirement engineering and requirement validation?",
+      "passed": false,
+      "avg_scores": {
+        "accuracy": 7.5,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.0
+      },
+      "failed_scopes": [
+        "unit"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "Explain functional versus non-functional requirements.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 69,
+      "question": "Define software design principles and modularity.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.62
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 70,
+      "question": "What is cohesion and coupling? Why are they important?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 71,
+      "question": "Explain black-box and white-box testing.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 72,
+      "question": "What is unit testing, integration testing, and system testing?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 73,
+      "question": "Define software metrics with examples (LOC, cyclomatic complexity).",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.42
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 74,
+      "question": "Explain risk management in software projects.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.62
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 75,
+      "question": "Define artificial intelligence and list AI problem characteristics.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 76,
+      "question": "Differentiate uninformed and informed search strategies.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 77,
+      "question": "Explain BFS, DFS, and A* in AI search.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 78,
+      "question": "What is heuristic function and admissibility?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 79,
+      "question": "Define knowledge representation and inference.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 80,
+      "question": "Explain propositional logic versus predicate logic.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.83
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 81,
+      "question": "What is machine learning and major categories of learning?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 82,
+      "question": "Differentiate supervised, unsupervised, and reinforcement learning.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 83,
+      "question": "Explain bias-variance tradeoff in model building.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 84,
+      "question": "What is overfitting and how can it be reduced?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 85,
+      "question": "Compare classification and regression with examples.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 86,
+      "question": "Explain confusion matrix, precision, recall, and F1-score.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 87,
+      "question": "What is cloud computing and its service models?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 88,
+      "question": "Differentiate IaaS, PaaS, and SaaS with examples.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 89,
+      "question": "What is virtualization and why is it used in cloud?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.83
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 90,
+      "question": "Explain public, private, and hybrid cloud models.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 91,
+      "question": "Define cybersecurity and CIA triad.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 92,
+      "question": "Differentiate authentication, authorization, and accounting.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 93,
+      "question": "Explain common web attacks: SQL injection and XSS.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 94,
+      "question": "What is cryptography? Compare symmetric and asymmetric encryption.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.25
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 95,
+      "question": "Explain digital signature and certificate authority.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 5.62
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 96,
+      "question": "What is firewall and IDS/IPS difference?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 97,
+      "question": "Define discrete mathematics role in computer science.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.25,
+        "clarity": 7.0,
+        "structure": 5.5,
+        "relevance": 6.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 98,
+      "question": "Explain graph representation and shortest path problem conceptually.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 99,
+      "question": "What is NP-complete problem with one example?",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    },
+    {
+      "id": 100,
+      "question": "Explain divide-and-conquer strategy with merge sort as example.",
+      "passed": true,
+      "avg_scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "failed_scopes": []
+    }
+  ],
+  "critical_failures": [],
+  "sample_scope_results": [
+    {
+      "scope": "global",
+      "status": 200,
+      "question": "Define algorithm and differentiate it from a program with an example.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "subject",
+      "status": 200,
+      "question": "Define algorithm and differentiate it from a program with an example.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "unit",
+      "status": 200,
+      "question": "Define algorithm and differentiate it from a program with an example.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "pdf",
+      "status": 200,
+      "question": "Define algorithm and differentiate it from a program with an example.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "global",
+      "status": 200,
+      "question": "Explain time complexity and space complexity with Big O notation.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "subject",
+      "status": 200,
+      "question": "Explain time complexity and space complexity with Big O notation.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "unit",
+      "status": 200,
+      "question": "Explain time complexity and space complexity with Big O notation.",
+      "answer": "## Definition\n## Main Answer\n\n### UNIT 1: Big Data Fundamentals #### Introduction Big Data refers to extremely large and complex datasets that cannot be processed efficiently using traditional data processing tools.\n\n## Explanation\nWith the rapid growth of digital technologies, massive amounts of structured, semi-structured, and unstructured data are generated daily from sources such as social media, sensors, and enterprise systems. This unit introduces the fundamental concepts of Big Data, including its characteristics, challenges, and importance in modern computing. ## Source\n\nNot available\n\n## Key Concepts\n\n* Data\n* Unit\n* Using\n* Structured\n* Characteristics\n\n## Example\n\nUnderstanding Big Data is essential for organizations to extract meaningful insights and make data-driven decisions. ## References\n\n* No references available.\n\n## Key Points\n- ## Main Answer\n- ### UNIT 1: Big Data Fundamentals #### Introduction Big Data refers to extremely large and complex datasets that cannot be processed efficiently using traditional data processing tools. With the rapid growth of digital technologies, massive amounts of structured, semi-structured, and unstructured data are generated daily from sources such as social media, sensors, and enterprise systems. This unit introduces the fundamental concepts of Big Data, including its characteristics, challenges, and importance in modern computing.\n- ## Source",
+      "scores": {
+        "accuracy": 9.0,
+        "clarity": 10.0,
+        "structure": 10.0,
+        "relevance": 7.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "pdf",
+      "status": 200,
+      "question": "Explain time complexity and space complexity with Big O notation.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "global",
+      "status": 200,
+      "question": "Compare arrays and linked lists for insertion and deletion operations.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "subject",
+      "status": 200,
+      "question": "Compare arrays and linked lists for insertion and deletion operations.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "unit",
+      "status": 200,
+      "question": "Compare arrays and linked lists for insertion and deletion operations.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "pdf",
+      "status": 200,
+      "question": "Compare arrays and linked lists for insertion and deletion operations.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "global",
+      "status": 200,
+      "question": "What is pointer arithmetic in C and where is it useful?",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "subject",
+      "status": 200,
+      "question": "What is pointer arithmetic in C and where is it useful?",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "unit",
+      "status": 200,
+      "question": "What is pointer arithmetic in C and where is it useful?",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "pdf",
+      "status": 200,
+      "question": "What is pointer arithmetic in C and where is it useful?",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "global",
+      "status": 200,
+      "question": "Explain recursion with a factorial example and its call stack behavior.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "subject",
+      "status": 200,
+      "question": "Explain recursion with a factorial example and its call stack behavior.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "unit",
+      "status": 200,
+      "question": "Explain recursion with a factorial example and its call stack behavior.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "pdf",
+      "status": 200,
+      "question": "Explain recursion with a factorial example and its call stack behavior.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "global",
+      "status": 200,
+      "question": "Differentiate stack and queue with real-world applications.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "subject",
+      "status": 200,
+      "question": "Differentiate stack and queue with real-world applications.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "unit",
+      "status": 200,
+      "question": "Differentiate stack and queue with real-world applications.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "pdf",
+      "status": 200,
+      "question": "Differentiate stack and queue with real-world applications.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    },
+    {
+      "scope": "global",
+      "status": 200,
+      "question": "Write the logic for infix to postfix conversion using stack.",
+      "answer": "This topic is not available in the selected syllabus.",
+      "scores": {
+        "accuracy": 8.0,
+        "clarity": 6.0,
+        "structure": 4.0,
+        "relevance": 5.0
+      },
+      "strict_fail": false,
+      "strict_fail_reasons": [],
+      "failed_reason": []
+    }
+  ]
+}

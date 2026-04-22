@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}Chunk Preview{% endblock %}
+{% block content %}
+<section class="page-shell section-stack fade-in">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">{{ pdf.title }}</h1>
+      <p class="section-subtitle">Preview extracted paragraph chunks, metadata, and processing output.</p>
+    </div>
+    <div class="page-actions">
+      <a href="{% url 'pdf_list' %}?mine=1" class="btn btn-secondary btn-sm">Back to PDFs</a>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <h2 class="h5 mb-0">PDF Viewer</h2>
+        <div class="d-flex align-items-center gap-2">
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="pdfZoomOut">-</button>
+          <span class="badge bg-light text-dark" id="pdfZoomLabel">100%</span>
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="pdfZoomIn">+</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="pdfPrevPage">Prev</button>
+          <span class="badge bg-secondary" id="pdfPageLabel">Page 1</span>
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="pdfNextPage">Next</button>
+        </div>
+      </div>
+
+      <div class="ratio ratio-16x9 mb-4" style="min-height: 420px;">
+        <iframe id="pdfViewerFrame" src="{% url 'serve_reference_pdf' pdf.id %}?t={% now 'U' %}#zoom=100&page=1" title="PDF Viewer" style="border:1px solid var(--border-color); border-radius:12px;"></iframe>
+      </div>
+
+      <div class="d-flex gap-2 flex-wrap mb-3">
+        <span class="badge bg-secondary">{{ pdf.subject.name }}</span>
+        <span class="badge bg-light text-dark">Chunks {{ pdf.chunk_count }}</span>
+        <span class="badge bg-light text-dark">Diagrams {{ pdf.diagram_count }}</span>
+        <span class="badge bg-light text-dark">{{ pdf.get_processing_status_display }}</span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Page</th>
+              <th>Paragraph</th>
+              <th>Tokens</th>
+              <th>Excerpt</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for chunk in chunks %}
+              <tr>
+                <td>{{ chunk.page_number }}</td>
+                <td>{{ chunk.chunk_index }}</td>
+                <td>{{ chunk.metadata.token_count|default:'-' }}</td>
+                <td>{{ chunk.text_content|truncatechars:220 }}</td>
+              </tr>
+            {% empty %}
+              <tr>
+                <td colspan="4" class="text-center text-muted-ui py-4">No extracted chunks available.</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const frame = document.getElementById('pdfViewerFrame');
+    const zoomIn = document.getElementById('pdfZoomIn');
+    const zoomOut = document.getElementById('pdfZoomOut');
+    const nextPage = document.getElementById('pdfNextPage');
+    const prevPage = document.getElementById('pdfPrevPage');
+    const zoomLabel = document.getElementById('pdfZoomLabel');
+    const pageLabel = document.getElementById('pdfPageLabel');
+
+    let zoom = 100;
+    let page = 1;
+
+    function render() {
+      if (!frame) return;
+      frame.src = "{% url 'serve_reference_pdf' pdf.id %}?t={% now 'U' %}#zoom=" + zoom + "&page=" + page;
+      if (zoomLabel) zoomLabel.textContent = zoom + "%";
+      if (pageLabel) pageLabel.textContent = "Page " + page;
+    }
+
+    if (zoomIn) zoomIn.addEventListener('click', function () { zoom = Math.min(200, zoom + 10); render(); });
+    if (zoomOut) zoomOut.addEventListener('click', function () { zoom = Math.max(50, zoom - 10); render(); });
+    if (nextPage) nextPage.addEventListener('click', function () { page = page + 1; render(); });
+    if (prevPage) prevPage.addEventListener('click', function () { page = Math.max(1, page - 1); render(); });
+  })();
+</script>
+{% endblock %}

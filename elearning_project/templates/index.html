@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Academic AI Library{% endblock %}
+{% block content %}
+<div class="hero hero-home" data-reveal>
+  <div class="hero-overlay">
+    <span class="hero-eyebrow">Academic Digital Library</span>
+    <h1 class="hero-title">Learn with structure, trusted resources, and AI support.</h1>
+    <p class="hero-copy">Build mastery faster with semester-wise subjects, lesson progress tracking, reference PDFs, and context-aware chatbot assistance.</p>
+    <div class="hero-actions">
+      <a href="{% url 'register' %}" class="btn btn-primary">Get Started</a>
+      <a href="{% url 'user_login' %}" class="btn btn-secondary">Login</a>
+    </div>
+  </div>
+</div>
+
+<section class="section-stack">
+  <div class="section-header">
+    <h2 class="mb-0">Why students use this platform</h2>
+    <p class="section-subtitle">Focused workflows for learning, searching, and revision.</p>
+  </div>
+  <div class="row g-3 stagger-grid" data-stagger>
+    <div class="col-md-4 stagger-item">
+      <div class="card card-glass h-100">
+        <div class="card-body">
+          <h3 class="h5">Structured Curriculum</h3>
+          <p class="mb-0">Browse semester subjects, open lessons quickly, and maintain an organized path through your syllabus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 stagger-item">
+      <div class="card card-glass h-100">
+        <div class="card-body">
+          <h3 class="h5">Reference PDF Library</h3>
+          <p class="mb-0">Filter by semester and subject, then access approved documents in one searchable place.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 stagger-item">
+      <div class="card card-glass h-100">
+        <div class="card-body">
+          <h3 class="h5">AI Chat Support</h3>
+          <p class="mb-0">Ask questions across your curriculum with optional strict mode and focused source context.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

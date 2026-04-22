@@ -1,0 +1,200 @@
+{
+  "timestamp": "2026-03-16T16:30:43.933135Z",
+  "openrouter_key_present": false,
+  "ollama_model": "phi3",
+  "openrouter_model": "qwen/qwen3-next-80b-a3b-instruct:free",
+  "ollama": [
+    {
+      "question": "What is encapsulation in object-oriented programming?",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": true,
+        "quality_score": 7,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": true,
+        "hallucination_risk_ok": true,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 3,
+        "grounding_overlap": 0.6957,
+        "unknown_ratio": 0.2778,
+        "issues": [],
+        "model_used": "deterministic"
+      }
+    },
+    {
+      "question": "Explain inheritance with a simple real-world example.",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": false,
+        "quality_score": 5,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": false,
+        "hallucination_risk_ok": false,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 3,
+        "grounding_overlap": 0.05,
+        "unknown_ratio": 0.9279,
+        "issues": [
+          "reference_grounding_weak",
+          "hallucination_risk_high"
+        ],
+        "model_used": "deterministic"
+      }
+    },
+    {
+      "question": "What is the difference between method overloading and method overriding?",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": true,
+        "quality_score": 7,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": true,
+        "hallucination_risk_ok": true,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 3,
+        "grounding_overlap": 0.7723,
+        "unknown_ratio": 0.1935,
+        "issues": [],
+        "model_used": "deterministic"
+      }
+    },
+    {
+      "question": "How does polymorphism improve program design?",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": true,
+        "quality_score": 7,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": true,
+        "hallucination_risk_ok": true,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 2,
+        "grounding_overlap": 0.7606,
+        "unknown_ratio": 0.1849,
+        "issues": [],
+        "model_used": "deterministic"
+      }
+    }
+  ],
+  "openrouter": [
+    {
+      "question": "What is encapsulation in object-oriented programming?",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": true,
+        "quality_score": 7,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": true,
+        "hallucination_risk_ok": true,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 3,
+        "grounding_overlap": 0.6957,
+        "unknown_ratio": 0.2778,
+        "issues": [],
+        "model_used": "deterministic"
+      }
+    },
+    {
+      "question": "Explain inheritance with a simple real-world example.",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": false,
+        "quality_score": 5,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": false,
+        "hallucination_risk_ok": false,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 3,
+        "grounding_overlap": 0.05,
+        "unknown_ratio": 0.9279,
+        "issues": [
+          "reference_grounding_weak",
+          "hallucination_risk_high"
+        ],
+        "model_used": "deterministic"
+      }
+    },
+    {
+      "question": "What is the difference between method overloading and method overriding?",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": true,
+        "quality_score": 7,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": true,
+        "hallucination_risk_ok": true,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 3,
+        "grounding_overlap": 0.7723,
+        "unknown_ratio": 0.1935,
+        "issues": [],
+        "model_used": "deterministic"
+      }
+    },
+    {
+      "question": "How does polymorphism improve program design?",
+      "generation_mode": "deterministic",
+      "final_model": "deterministic",
+      "final_quality_score": 7,
+      "main_answer_preview": "",
+      "references": [],
+      "quality": {
+        "acceptable": true,
+        "quality_score": 7,
+        "answer_length_ok": true,
+        "concept_coverage_ok": true,
+        "reference_grounding_ok": true,
+        "hallucination_risk_ok": true,
+        "example_presence_ok": true,
+        "structured_sections_ok": true,
+        "concept_hits": 2,
+        "grounding_overlap": 0.7606,
+        "unknown_ratio": 0.1849,
+        "issues": [],
+        "model_used": "deterministic"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Curriculum Chat{% endblock %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'css/chatgpt-chat.css' %}?v=3">
+{% endblock %}
+{% block content %}
+<section class="page-shell chat-page">
+  <section
+    class="page-content chatgpt-shell chat-layout"
+    data-chatgpt-root
+    data-stream-url="{% url 'curriculum_chat_stream' %}"
+    data-history-url="{% url 'curriculum_chat_history' %}"
+    data-user-id="{{ request.user.id }}"
+    data-strict-locked="{{ strict_locked|yesno:'1,0' }}">
+
+  <aside class="chatgpt-sidebar chat-sidebar" aria-label="Conversation history panel">
+    <div class="chatgpt-sidebar-head">
+      <button type="button" class="btn btn-primary chatgpt-new-chat" data-new-chat aria-label="Start a new conversation">+ New Chat</button>
+    </div>
+    <div class="chatgpt-sidebar-feedback" data-chat-feedback aria-live="polite"></div>
+
+    <div id="chat-thread-list" class="chatgpt-thread-list" data-thread-list tabindex="0" aria-label="Previous chats">
+      {% for entry in recent_queries|slice:":20" %}
+        <div class="chatgpt-thread-row">
+          <button type="button" class="chatgpt-thread-item chat-thread-item" data-server-thread>
+            <strong>{{ entry.question|truncatewords:6 }}</strong>
+            <span>{{ entry.created_at }}</span>
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-danger chat-thread-delete" aria-label="Delete chat">
+            <i class="bi bi-trash"></i>
+          </button>
+        </div>
+      {% empty %}
+        <div class="chatgpt-empty-history">No chats yet. Start a new conversation.</div>
+      {% endfor %}
+    </div>
+    <div class="chatgpt-history-more">
+      <button type="button" class="btn btn-outline-secondary btn-sm w-100" data-load-history>
+        <i class="bi bi-clock-history" aria-hidden="true"></i>
+        <span>Load More</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="chatgpt-main chat-main" aria-label="Chat conversation area">
+    <header class="chatgpt-main-head">
+      <div>
+        <h2 class="h5 mb-0">Conversation</h2>
+      </div>
+      <div class="chatgpt-head-actions">
+        <button
+          type="button"
+          class="btn btn-outline-danger btn-sm chatgpt-control-toggle"
+          data-clear-chat>
+          <i class="bi bi-trash3" aria-hidden="true"></i>
+          <span>Clear Chat</span>
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary btn-sm chatgpt-control-toggle chatgpt-history-visibility-toggle"
+          data-sidebar-toggle
+          aria-expanded="true"
+          aria-controls="chat-thread-list">
+          <i class="bi bi-layout-sidebar-inset-reverse" aria-hidden="true"></i>
+          <span>Hide Chats</span>
+        </button>
+      </div>
+    </header>
+
+    <section id="chat-message-container" class="chatgpt-message-scroller" data-message-scroller aria-live="polite" aria-label="Conversation messages">
+      {% if bot_response %}
+        <article class="chat-msg assistant" data-server-fallback>
+          <div class="chat-bubble-wrap">
+            <div class="chat-bubble">
+              {% if structured_response %}
+                {% for item in structured_response %}
+                  <h3>Main answer — {{ item.concept }}</h3>
+                  <h4>Detailed Explanation</h4>
+                  <p>{{ item.detailed_explanation }}</p>
+                  {% if item.key_points %}
+                    <h4>Key points</h4>
+                    <ul>
+                      {% for point in item.key_points %}
+                        <li>{{ point }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                  <h4>References</h4>
+                  <p>{{ item.reference_page }}</p>
+                {% endfor %}
+              {% else %}
+                <p>{{ bot_response }}</p>
+              {% endif %}
+            </div>
+            <span class="chat-time">{% now "h:i A" %}</span>
+          </div>
+        </article>
+      {% endif %}
+
+      <div class="chatgpt-empty-state" data-empty-state>
+        <i class="bi bi-chat-left-text"></i>
+        <h2>Ask your syllabus question</h2>
+        <p>Type your question below to get an answer with references.</p>
+      </div>
+    </section>
+
+    <section class="chatgpt-thinking" data-thinking aria-hidden="true">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span>Thinking...</span>
+    </section>
+
+    <form class="chatgpt-composer" data-chat-form aria-label="Message composer">
+      {% csrf_token %}
+      <select data-input-subject class="chatgpt-subject-inline" aria-label="Select subject (optional)">
+        <option value="">Auto detect</option>
+        {% for subject in subjects %}
+          <option value="{{ subject.id }}">{{ subject.name }}</option>
+        {% endfor %}
+      </select>
+      <textarea
+        id="messageInput"
+        data-input-message
+        placeholder="Message AI Curriculum Chat..."
+        aria-label="Type your message"
+        rows="1"></textarea>
+      <button type="submit" class="btn btn-primary chatgpt-send-btn" data-send-button aria-label="Send message">
+        <i class="bi bi-send" aria-hidden="true"></i>
+        <span>Send</span>
+      </button>
+    </form>
+    <p class="chatgpt-composer-hint">Enter to send · Shift+Enter for newline</p>
+  </main>
+
+  </section>
+</section>
+
+{{ lesson_catalog|json_script:"lesson-catalog-data" }}
+
+<div class="modal fade" id="chatSourceModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content chat-source-modal">
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="chatSourceModalTitle">Source Viewer</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="about:blank" data-source-iframe title="Source preview"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="{% static 'js/chatgpt-chat.js' %}"></script>
+{% endblock %}

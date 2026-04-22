@@ -1,0 +1,109 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 560 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(OOP Foundations Demo Syllabus) Tj
+T*
+T*
+(Polymorphism allows one interface to support many concrete behaviors in object) Tj
+T*
+(oriented programming. The syllabus defines runtime polymorphism as method overriding) Tj
+T*
+(resolved through inheritance.) Tj
+T*
+T*
+(Inheritance establishes the common parent-child relationship used to enable) Tj
+T*
+(polymorphic method dispatch in class hierarchies.) Tj
+T*
+T*
+(Figure 1 shows the class hierarchy architecture for polymorphism, method overriding,) Tj
+T*
+(and dynamic binding.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 368 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(OOP Foundations Demo Syllabus) Tj
+T*
+T*
+(Method overloading and method overriding are distinct. Overloading changes the) Tj
+T*
+(parameter list while overriding replaces inherited behavior in a subclass.) Tj
+T*
+T*
+(Example: a drawing system can call draw on many shapes, and each subclass supplies its) Tj
+T*
+(own implementation.) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 346 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(OOP Foundations Demo Syllabus) Tj
+T*
+T*
+(Abstraction and encapsulation usually appear with polymorphism because the syllabus) Tj
+T*
+(groups them as core object oriented principles.) Tj
+T*
+T*
+(The review section emphasizes related concepts such as dynamic binding, inheritance,) Tj
+T*
+(and interface design.) Tj
+T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000808 00000 n 
+0000000934 00000 n 
+0000001353 00000 n 
+0000001479 00000 n 
+0000001876 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+2002
+%%EOF

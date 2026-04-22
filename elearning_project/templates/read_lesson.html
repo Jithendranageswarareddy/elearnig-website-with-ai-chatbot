@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}Read Lesson{% endblock %}
+{% block content %}
+<section class="page-shell section-stack fade-in">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">{{ lesson.title }}</h1>
+      <p class="section-subtitle mb-0">{{ lesson.subject.name }}</p>
+    </div>
+    <div class="page-actions">
+      <a href="{% url 'learn_lessons' lesson.subject.id %}" class="btn btn-secondary btn-sm">Back to Lessons</a>
+
+      <form method="post" action="{% url 'add_bookmark' lesson.id %}" class="d-inline">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{% url 'read_lesson' lesson.id %}">
+        <button type="submit" class="btn btn-secondary btn-sm">
+          {% if is_bookmarked %}Bookmarked{% else %}Bookmark{% endif %}
+        </button>
+      </form>
+
+      <form method="post" action="{% url 'complete_lesson' lesson.id %}" class="d-inline">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{% url 'read_lesson' lesson.id %}">
+        <button type="submit" class="btn btn-primary btn-sm">
+          {% if is_completed %}Completed{% else %}Mark Complete{% endif %}
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <article class="page-content card card-glass">
+    <div class="card-body lesson-content p-4">
+      {{ lesson.content|linebreaks }}
+    </div>
+  </article>
+
+  <section class="page-content card card-glass">
+    <div class="card-body p-4">
+      <h2 class="h5 mb-3">Reference Materials</h2>
+      {% if pdfs %}
+        <ul class="list-group list-group-flush">
+          {% for pdf in pdfs %}
+            <li class="list-group-item d-flex justify-content-between align-items-center gap-3 px-0">
+              <span>{{ pdf.title }}</span>
+              <a href="{{ pdf.file.url }}" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">View PDF</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="mb-0 text-muted-ui">No reference materials linked to this lesson.</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <form method="post" action="{% url 'track_lesson_view' lesson.id %}" id="lessonTrackForm" class="d-none">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{% url 'read_lesson' lesson.id %}">
+  </form>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("lessonTrackForm");
+  if (!form) {
+    return;
+  }
+  const csrfInput = form.querySelector("input[name='csrfmiddlewaretoken']");
+  const payload = new URLSearchParams(new FormData(form));
+  fetch(form.action, {
+    method: "POST",
+    headers: {
+      "X-CSRFToken": csrfInput ? csrfInput.value : "",
+      "X-Requested-With": "XMLHttpRequest"
+    },
+    body: payload,
+    credentials: "same-origin"
+  }).catch(function () {
+    return null;
+  });
+});
+</script>
+{% endblock %}

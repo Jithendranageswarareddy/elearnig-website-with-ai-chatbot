@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}User Login{% endblock %}
+{% block content %}
+<div class="hero hero-auth fade-in">
+  <div class="hero-overlay d-flex justify-content-center">
+    <div class="card card-glass auth-card auth-card-sm">
+      <div class="card-body">
+        <h2 class="text-center mb-3">Sign In</h2>
+        <p class="text-center section-subtitle mb-4">Access your dashboard and continue learning.</p>
+        <form method="post" class="row g-3">
+          {% csrf_token %}
+          <div class="col-12">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" autocomplete="email" required>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" autocomplete="current-password" required>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100 js-btn-loading" data-loading-text="Signing in...">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,391 @@
+{
+  "settings": {
+    "openrouter_key_present": true,
+    "generation_mode": "deterministic",
+    "rerank_vector_weight": 0.75,
+    "rerank_keyword_weight": 0.25,
+    "rerank_min_token_length": 3
+  },
+  "improvement_history": [
+    {
+      "round": 1,
+      "candidate": {
+        "vector": 0.75,
+        "keyword": 0.25,
+        "min_token": 3
+      },
+      "summary": {
+        "probe_count": 20,
+        "relevant_count": 19,
+        "avg_retrieval_overlap": 0.4424
+      },
+      "score": 32.924
+    },
+    {
+      "round": 1,
+      "candidate": {
+        "vector": 0.65,
+        "keyword": 0.35,
+        "min_token": 3
+      },
+      "summary": {
+        "probe_count": 20,
+        "relevant_count": 19,
+        "avg_retrieval_overlap": 0.4424
+      },
+      "score": 32.924
+    },
+    {
+      "round": 1,
+      "candidate": {
+        "vector": 0.55,
+        "keyword": 0.45,
+        "min_token": 3
+      },
+      "summary": {
+        "probe_count": 20,
+        "relevant_count": 19,
+        "avg_retrieval_overlap": 0.4424
+      },
+      "score": 32.924
+    },
+    {
+      "round": 1,
+      "candidate": {
+        "vector": 0.6,
+        "keyword": 0.4,
+        "min_token": 4
+      },
+      "summary": {
+        "probe_count": 20,
+        "relevant_count": 19,
+        "avg_retrieval_overlap": 0.4424
+      },
+      "score": 32.924
+    }
+  ],
+  "summary": {
+    "question_count": 20,
+    "average_generation_time_seconds": 1.748,
+    "p95_generation_time_seconds": 2.557,
+    "average_reference_count": 2.6,
+    "empty_answer_count": 0,
+    "irrelevant_answer_count": 10,
+    "repeated_answer_count": 13,
+    "irrelevant_examples": [
+      {
+        "question": "What are the advantages of OOP?",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      },
+      {
+        "question": "Differentiate class and object.",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      },
+      {
+        "question": "Why is object oriented programming important?",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "Write a program using if -else statement. A five -digit number is entered through the keyboard. Write a program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not. W"
+      },
+      {
+        "question": "How does object oriented programming work?",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      },
+      {
+        "question": "What are the key points of object oriented programming?",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      },
+      {
+        "question": "What is class?",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      },
+      {
+        "question": "Explain class in simple terms.",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      },
+      {
+        "question": "Give a short explanation of class.",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      },
+      {
+        "question": "Why is class important?",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "Write a program using if -else statement. A five -digit number is entered through the keyboard. Write a program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not. W"
+      },
+      {
+        "question": "How does class work?",
+        "reason": "topic_tokens_missing",
+        "answer_preview": "The syllabus reference does not contain enough relevant information for this question."
+      }
+    ],
+    "empty_examples": []
+  },
+  "results": [
+    {
+      "question": "What is Object Oriented Programming?",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 1.654,
+      "synthesis_seconds": 0.43,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "16 LOVELY PROFESSIONAL UNIVERSITYObject-oriented Programming Notes Depending upon the features they support, they are classified as object based programming languages and object-oriented programming languages. Object Ori",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "Explain polymorphism in OOP.",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 1.277,
+      "synthesis_seconds": 0.1,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "Polymorphism is extensively used in implementing inheritance as shown below. Characteristics Sim ula Small talk 80 Objective C C ++ ADA Object Pascal Eittel Binding (early or late) Both Late Both Both Early Late Early po",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "What is encapsulation?",
+      "retrieved_chunk_count": 10,
+      "references_count": 4,
+      "generation_time_seconds": 1.2,
+      "synthesis_seconds": 0.06,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "Data Encapsulation: The wrapping up to data and functions into a single unit (class) is known as encapsulation. Make distinctions between data abstraction and data encapsulation. Data encapsulation is the most striking f",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "What is inheritance?",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 1.358,
+      "synthesis_seconds": 0.074,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "178 LOVELY PROFESSIONAL UNIVERSITYObject-oriented Programming Notes 9.2.3 Multiple Inheritance A class can inherit the attributes of two or more classes. This mechanism is known as ‘MULTIPLE INHERITANCE’. Multiple inheri",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "What is abstraction?",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 2.231,
+      "synthesis_seconds": 0.07,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "Data Abstraction: Abstraction refers to the act of representing essential-features without including the background details or explanations. Abstraction is indispensable part of the design process and is essential for pr",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "What is stack data structure?",
+      "retrieved_chunk_count": 10,
+      "references_count": 4,
+      "generation_time_seconds": 1.461,
+      "synthesis_seconds": 0.071,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "Lecture -04 STACK A stack is an Abstract Data Type (ADT), commonly used in most programming languages. Stack: is a section of memory set aside to store addresses and data while subprogram executes is often called segment",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "What is queue data structure?",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 1.35,
+      "synthesis_seconds": 0.042,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "The following diagram given below tries to explain queue representation as data structure −. A queue is normally restricted to 2 GB of data, but depending on the underlying operating system, this maximum can be easily se",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "What are the advantages of OOP?",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 1.556,
+      "synthesis_seconds": 0.031,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "Differentiate class and object.",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 1.639,
+      "synthesis_seconds": 0.025,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "What is method overloading?",
+      "retrieved_chunk_count": 10,
+      "references_count": 2,
+      "generation_time_seconds": 1.787,
+      "synthesis_seconds": 0.041,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "The available syllabus references do not provide enough grounded detail for method.",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "Explain object oriented programming in simple terms.",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 1.806,
+      "synthesis_seconds": 0.057,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "16 LOVELY PROFESSIONAL UNIVERSITYObject-oriented Programming Notes Depending upon the features they support, they are classified as object based programming languages and object-oriented programming languages. Object Ori",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "Give a short explanation of object oriented programming.",
+      "retrieved_chunk_count": 10,
+      "references_count": 2,
+      "generation_time_seconds": 1.614,
+      "synthesis_seconds": 0.068,
+      "generation_mode": "deterministic",
+      "llm_model_used": null,
+      "answer_preview": "16 LOVELY PROFESSIONAL UNIVERSITYObject-oriented Programming Notes Depending upon the features they support, they are classified as object based programming languages and object-oriented programming languages. Object Ori",
+      "is_empty_answer": false,
+      "is_irrelevant": false,
+      "irrelevant_reason": ""
+    },
+    {
+      "question": "Why is object oriented programming important?",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 4.431,
+      "synthesis_seconds": 0.023,
+      "generation_mode": "concept_cache",
+      "llm_model_used": null,
+      "answer_preview": "Write a program using if -else statement. A five -digit number is entered through the keyboard. Write a program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not. W",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "How does object oriented programming work?",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 2.557,
+      "synthesis_seconds": 0.116,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "What are the key points of object oriented programming?",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 2.149,
+      "synthesis_seconds": 0.029,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "What is class?",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 1.876,
+      "synthesis_seconds": 0.022,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "Explain class in simple terms.",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 1.565,
+      "synthesis_seconds": 0.006,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "Give a short explanation of class.",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 1.126,
+      "synthesis_seconds": 0.006,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "Why is class important?",
+      "retrieved_chunk_count": 10,
+      "references_count": 5,
+      "generation_time_seconds": 1.223,
+      "synthesis_seconds": 0.009,
+      "generation_mode": "concept_cache",
+      "llm_model_used": null,
+      "answer_preview": "Write a program using if -else statement. A five -digit number is entered through the keyboard. Write a program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not. W",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    },
+    {
+      "question": "How does class work?",
+      "retrieved_chunk_count": 10,
+      "references_count": 0,
+      "generation_time_seconds": 1.106,
+      "synthesis_seconds": 0.004,
+      "generation_mode": "deterministic_guard",
+      "llm_model_used": null,
+      "answer_preview": "The syllabus reference does not contain enough relevant information for this question.",
+      "is_empty_answer": false,
+      "is_irrelevant": true,
+      "irrelevant_reason": "topic_tokens_missing"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 416 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(Database Systems Demo Syllabus) Tj
+T*
+T*
+(Normalization organizes relational data to reduce redundancy and update anomalies.) Tj
+T*
+(First normal form removes repeating groups and higher forms reduce partial or) Tj
+T*
+(transitive dependency.) Tj
+T*
+T*
+(The syllabus defines normalization as a design discipline for clean relational schemas) Tj
+T*
+(and dependable transactions.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 344 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(Database Systems Demo Syllabus) Tj
+T*
+T*
+(A database architecture diagram usually includes clients, the query processor, the) Tj
+T*
+(storage manager, and the data files.) Tj
+T*
+T*
+(Figure 4 shows the database system structure and the flow from SQL request to disk) Tj
+T*
+(pages through buffer management.) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 318 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td
+18 TL
+(Database Systems Demo Syllabus) Tj
+T*
+T*
+(B-tree indexing improves search performance by reducing the number of disk accesses) Tj
+T*
+(required to locate ordered keys.) Tj
+T*
+T*
+(Transactions preserve consistency through atomicity, consistency, isolation, and) Tj
+T*
+(durability.) Tj
+T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000664 00000 n 
+0000000790 00000 n 
+0000001185 00000 n 
+0000001311 00000 n 
+0000001680 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+1806
+%%EOF

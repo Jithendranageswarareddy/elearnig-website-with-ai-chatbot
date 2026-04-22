@@ -1,0 +1,13 @@
+﻿Django==6.0.2
+python-dotenv==1.1.1
+dj-database-url==2.3.0
+psycopg[binary]==3.2.9
+
+# Core runtime dependencies
+PyMuPDF==1.26.4
+numpy==2.3.4
+scikit-learn==1.7.2
+redis==7.0.0
+
+# Optional async/task queue support (safe to keep for local/demo)
+celery==5.6.0rc1

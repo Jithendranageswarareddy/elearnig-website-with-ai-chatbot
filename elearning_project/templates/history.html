@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Learning History{% endblock %}
+{% block content %}
+<section class="page-shell section-stack fade-in">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">Your History</h1>
+      <p class="section-subtitle">Recently viewed lessons with timestamps.</p>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body p-0">
+      <ul class="list-group list-group-flush">
+        {% for h in history %}
+          <li class="list-group-item d-flex justify-content-between align-items-center gap-2">
+            <div>
+              <a href="{% url 'read_lesson' h.lesson.id %}" class="fw-500">{{ h.lesson.title }}</a>
+              <p class="mb-0 text-muted-ui">{{ h.viewed_at }}</p>
+            </div>
+            <a href="{% url 'read_lesson' h.lesson.id %}" class="btn btn-primary btn-sm">Open</a>
+          </li>
+        {% empty %}
+          <li class="list-group-item text-center text-muted-ui">No history available.</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

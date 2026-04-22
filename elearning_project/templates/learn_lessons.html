@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}Lessons{% endblock %}
+{% block content %}
+<section class="page-shell section-stack">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">{{ subject.name }} Lessons</h1>
+      <p class="section-subtitle">Follow lessons in sequence for focused study.</p>
+    </div>
+    <div class="page-actions">
+      <a href="{% url 'learn_subjects' %}" class="btn btn-secondary btn-sm">Back to Subjects</a>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body p-0">
+      <div class="p-3 border-bottom">
+        <p class="mb-2 fw-semibold">Progress: {{ completed_lessons }} / {{ total_lessons }} lessons ({{ progress_percent }}%)</p>
+        <div class="progress" role="progressbar" aria-label="Lesson progress" aria-valuenow="{{ progress_percent }}" aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
+          <div class="progress-bar" style="width: {{ progress_percent }}%;"></div>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush">
+        {% for lesson in lessons %}
+          <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+            <div>
+              <h3 class="h6 mb-1">{{ lesson.title }}</h3>
+              <p class="mb-0 text-muted-ui">Lesson {{ lesson.order }}</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-secondary">#{{ lesson.order }}</span>
+              <a href="{% url 'read_lesson' lesson.id %}" class="btn btn-primary btn-sm">Open</a>
+            </div>
+          </li>
+        {% empty %}
+          <li class="list-group-item">
+            <div class="empty-state py-4">
+              <span class="empty-state-icon"><i class="bi bi-journal-x"></i></span>
+              <div>
+                <h3 class="h5 mb-1">No lessons available yet</h3>
+                <p>This subject is created but lesson content has not been published yet.</p>
+              </div>
+              <a href="{% url 'learn_subjects' %}" class="btn btn-secondary btn-sm">Back to Subjects</a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

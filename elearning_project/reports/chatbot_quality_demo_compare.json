@@ -1,0 +1,20 @@
+{
+  "before_first20": {
+    "question_count": 20,
+    "average_generation_time_seconds": 1.301,
+    "p95_generation_time_seconds": 1.784,
+    "average_reference_count": 2.6,
+    "empty_answer_count": 0,
+    "irrelevant_answer_count": 10,
+    "repeated_answer_count": 9
+  },
+  "after_demo20": {
+    "question_count": 20,
+    "average_generation_time_seconds": 1.748,
+    "p95_generation_time_seconds": 2.557,
+    "average_reference_count": 2.6,
+    "empty_answer_count": 0,
+    "irrelevant_answer_count": 10,
+    "repeated_answer_count": 13
+  }
+}

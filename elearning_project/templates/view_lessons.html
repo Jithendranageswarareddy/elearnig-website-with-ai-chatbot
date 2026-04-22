@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block title %}Lessons{% endblock %}
+{% block content %}
+<section class="page-shell section-stack">
+  <header class="page-header section-header">
+    <div>
+      <h1 class="mb-1">All Lessons</h1>
+      <p class="section-subtitle">Review and manage lessons for every subject.</p>
+    </div>
+    <div class="page-actions">
+      <a href="{% url 'add_lesson' %}" class="btn btn-primary btn-sm">Add Lesson</a>
+    </div>
+  </header>
+
+  <div class="page-content card card-glass">
+    <div class="card-body">
+      <div class="table-responsive" data-skeleton-host data-skeleton-delay="540">
+        <div class="skeleton-layer table-skeleton">
+          <div class="skeleton-block skeleton-line-lg"></div>
+          <div class="skeleton-block skeleton-line"></div>
+          <div class="skeleton-block skeleton-line"></div>
+          <div class="skeleton-block skeleton-line"></div>
+          <div class="skeleton-block skeleton-line"></div>
+          <div class="skeleton-block skeleton-line"></div>
+        </div>
+        <table class="table table-hover mb-0" data-skeleton-content>
+          <thead class="table-light">
+            <tr>
+              <th class="table-head-label">Subject</th>
+              <th class="table-head-label">Title</th>
+              <th class="table-head-label">Order</th>
+              <th class="table-head-label table-action-cell">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for l in lessons %}
+              <tr class="row-hover">
+                <td class="fw-500">{{ l.subject.name }}</td>
+                <td class="text-muted-ui">{{ l.title }}</td>
+                <td><span class="badge bg-secondary">{{ l.order }}</span></td>
+                <td class="table-action-cell">
+                  <form method="post" action="{% url 'delete_lesson' l.id %}" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this lesson?')">Delete</button>
+                  </form>
+                </td>
+              </tr>
+            {% empty %}
+              <tr>
+                <td colspan="4" class="text-center text-muted-ui py-4">No lessons available.</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  {% if lessons.paginator.num_pages > 1 %}
+    <nav aria-label="Lessons pages" class="d-flex justify-content-center mt-3">
+      <ul class="pagination mb-0">
+        {% if lessons.has_previous %}
+          <li class="page-item"><a class="page-link" href="?page={{ lessons.previous_page_number }}">Previous</a></li>
+        {% endif %}
+        <li class="page-item disabled"><span class="page-link">Page {{ lessons.number }} of {{ lessons.paginator.num_pages }}</span></li>
+        {% if lessons.has_next %}
+          <li class="page-item"><a class="page-link" href="?page={{ lessons.next_page_number }}">Next</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,8 @@
+{
+  "question_count": 100,
+  "average_generation_seconds": 1.949,
+  "max_generation_seconds": 8.327,
+  "garbage_text_count": 0,
+  "topic_mismatch_count": 0,
+  "repeated_answer_count": 0
+}

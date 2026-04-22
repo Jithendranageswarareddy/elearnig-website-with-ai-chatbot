@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-03-20 22:56:50",
+  "queries": [
+    {
+      "query": "What is operating system?",
+      "type": "definition",
+      "retrieved_chunks": 3,
+      "search_time_ms": "604.2",
+      "answer_time_ms": "0.5",
+      "total_time_ms": "604.6",
+      "quality": "correct",
+      "fallback_triggered": false,
+      "references_count": 3,
+      "concepts_count": 5,
+      "response_length": 617
+    },
+    {
+      "query": "Explain process scheduling in detail",
+      "type": "explanation",
+      "retrieved_chunks": 5,
+      "search_time_ms": "37.0",
+      "answer_time_ms": "0.2",
+      "total_time_ms": "37.2",
+      "quality": "correct",
+      "fallback_triggered": false,
+      "references_count": 2,
+      "concepts_count": 5,
+      "response_length": 515
+    },
+    {
+      "query": "Difference between process and thread with examples",
+      "type": "comparison",
+      "retrieved_chunks": 5,
+      "search_time_ms": "41.7",
+      "answer_time_ms": "0.3",
+      "total_time_ms": "42.0",
+      "quality": "correct",
+      "fallback_triggered": false,
+      "references_count": 2,
+      "concepts_count": 5,
+      "response_length": 542
+    },
+    {
+      "query": "What is IPL cricket?",
+      "type": "irrelevant",
+      "retrieved_chunks": 2,
+      "search_time_ms": "38.2",
+      "answer_time_ms": "0.1",
+      "total_time_ms": "38.4",
+      "quality": "hallucination_detected",
+      "fallback_triggered": false,
+      "references_count": 2,
+      "concepts_count": 5,
+      "response_length": 490
+    },
+    {
+      "query": "asdfghjkl",
+      "type": "random",
+      "retrieved_chunks": 0,
+      "search_time_ms": "32.4",
+      "answer_time_ms": "0.0",
+      "total_time_ms": "32.5",
+      "quality": "correct",
+      "fallback_triggered": true,
+      "references_count": 0,
+      "concepts_count": 0,
+      "response_length": 189
+    }
+  ],
+  "summary": {
+    "accuracy_rating": "4/5",
+    "average_response_time_ms": "150.9",
+    "total_queries_tested": 5,
+    "correct_responses": 4,
+    "wrong_responses": 0,
+    "partial_responses": 0,
+    "hallucinations_detected": 1
+  }
+}
